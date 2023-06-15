@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "./logo";
+
 function Fondo(props) {
   return (
     <svg
