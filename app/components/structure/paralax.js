@@ -9,7 +9,6 @@ import Montana2 from "./svgComponents/Montana2";
 import Montana3 from "./svgComponents/Montana3";
 import Montana4 from "./svgComponents/Montana4";
 import Montana5 from "./svgComponents/Montana5";
-import Logo from "./svgComponents/logo";
 
 export default function Paralax() {
   // const [mont, setmont] = useState("");
