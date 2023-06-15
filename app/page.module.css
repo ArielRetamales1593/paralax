@@ -7,6 +7,68 @@
   min-height: 100vh;
 }
 
+.logo {
+  z-index: 5;
+}
+.parallax {
+  margin-bottom: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+
+  z-index: 5;
+}
+.nav1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 20px;
+  font-family: var(--font-mono);
+  z-index: 1;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  font-size: 22px;
+  list-style: none;
+}
+
+.footer {
+  z-index: 5;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.footerNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
+  align-self: self-end;
+
+  list-style: none;
+}
+.footerContacto {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -97,7 +159,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
