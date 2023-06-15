@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 function Montana3(props) {
-  const [marginTop, setMarginTop] = useState("34%");
+  const [marginTop, setMarginTop] = useState("36%");
   const montanasRef = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
       const m1 = montanasRef.current;
       const { y } = m1.getBoundingClientRect();
-      const marginTop = y <= 200 ? "43%" : "34%";
+      const marginTop = y <= 200 ? "47%" : "36%";
       setMarginTop(marginTop);
     };
     window.addEventListener("scroll", handleScroll);

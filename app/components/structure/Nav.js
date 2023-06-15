@@ -3,8 +3,8 @@ export default function Nav() {
   return (
     <nav className={styles.nav1}>
       <svg
-        width="144"
-        height="149"
+        width="100"
+        height="105"
         viewBox="0 0 154 159"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

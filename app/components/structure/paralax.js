@@ -63,7 +63,7 @@ export default function Paralax() {
     const handleScroll = () => {
       const m1 = montanasRef.current;
       const { y } = m1.getBoundingClientRect();
-      const marginTop = y <= 0 ? "28%" : "8%";
+      const marginTop = y <= 100 ? "28%" : "8%";
       setMarginTop(marginTop);
     };
     window.addEventListener("scroll", handleScroll);

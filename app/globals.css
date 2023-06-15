@@ -93,6 +93,22 @@ a {
   text-decoration: none;
 }
 
+.contBlanco{
+
+position: absolute;
+
+
+
+
+}
+
+
+.ig{
+
+margin-left: 33rem;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -112,6 +128,7 @@ position: absolute;
 
 
 }
+
 
 
 .fondo{
@@ -150,11 +167,11 @@ z-index: 1;
 
 
 position: absolute;
-    margin-top: 33.5%;
+ 
     margin-right: 0;
     z-index: 3;
     
-    
+     
     
     }
 

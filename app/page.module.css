@@ -11,7 +11,7 @@
   z-index: 5;
 }
 .parallax {
-  margin-bottom: 1000px;
+  margin-bottom: 63rem;
   display: flex;
   flex-direction: column;
 }
@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
+  margin: 200px;
 
   z-index: 5;
 }
@@ -44,29 +45,23 @@
 }
 
 .footer {
-  z-index: 5;
   display: flex;
-  gap: 100px;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+
+  gap: 200px;
+  margin-top: 20%;
+}
+
+.contFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-}
-.footerNav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 80px;
-  align-self: self-end;
-
-  list-style: none;
-}
-.footerContacto {
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
+  height: 100vh;
+  background-image: url(../public/assets/svg/CAPA\ 5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .description {
