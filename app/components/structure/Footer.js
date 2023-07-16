@@ -1,7 +1,6 @@
 "use client";
 import styles from "../../page.module.css";
-import { useEffect } from "react";
-import Montana1 from "./svgComponents/Montana1";
+
 export default function Footer() {
   return (
     <div className={styles.contFooter}>

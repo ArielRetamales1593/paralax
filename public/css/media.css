@@ -1,0 +1,61 @@
+@media (max-width: 600px) {
+  /* Estilos para pantallas de 600px o más */
+  p {
+    font-size: 16px;
+  }
+
+  .msj {
+    position: absolute;
+    top: 0;
+    transform: scale(0.4);
+  }
+
+  .video2 {
+    margin-top: 50%;
+    width: 100%;
+  }
+
+  .fondoCont {
+    z-index: -2;
+    position: absolute;
+    height: 100vh;
+  }
+
+  .m1 {
+    width: 100%;
+    margin-top: 23%;
+    position: absolute;
+    z-index: -1;
+  }
+  .m2 {
+    width: 100%;
+    margin-top: 38%;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .m3 {
+    position: absolute;
+
+    z-index: 1;
+    width: 60%;
+
+    left: 0;
+    margin-top: 27%;
+  }
+
+  .m4 {
+    position: absolute;
+
+    z-index: 2;
+    width: 56%;
+    margin-top: 32%;
+    margin-left: 23%;
+  }
+
+  .rs {
+    z-index: 3;
+    margin-left: 43%;
+    margin-top: 10px;
+  }
+}
