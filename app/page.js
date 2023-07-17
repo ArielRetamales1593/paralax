@@ -1,13 +1,8 @@
 "use client";
-import Image from "next/image";
-import styles from "./page.module.css";
-import Nav from "./components/structure/Nav";
-import Footer from "./components/structure/Footer";
-import Paralax from "./components/structure/paralax";
-import Info from "./components/structure/Info";
+
 import Video from "./components/structure/Video";
 import { useState, useEffect } from "react";
-import Fondo1Cel from "./components/structure/Fondo1Cel";
+
 import FondoDesk from "./components/structure/svgComponents/FondoDesk";
 
 export default function Home() {
@@ -38,22 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <div>
-        {isLoading ? (
-          <Video />
-        ) : (<FondoDesk/>)
-          }
-      </div>
-
-      {/* <Fondo1Cel />
-
-      <div>{isLoading ? <Video /> : <div>{<Paralax />}</div>}</div> */}
-
-      {/* <Nav /> */}
-      {/* 
-      <Paralax />
-      <Info />
-      <Footer /> */}
+      <div>{isLoading ? <Video /> : <FondoDesk />}</div>
     </>
   );
 }
