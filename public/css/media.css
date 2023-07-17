@@ -1,8 +1,5 @@
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
   /* Estilos para pantallas de 600px o más */
-  p {
-    font-size: 16px;
-  }
 
   .msj {
     position: absolute;

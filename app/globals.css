@@ -12,7 +12,7 @@ Beige #FFF9F6
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: "PT Sans", 
+  --font-mono: "PT_Sans", 
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -178,6 +178,13 @@ align-items: center;
 
 
 
+
+
+
+
+
+
+
 .fondoCont{
 
   z-index: -2;
@@ -276,3 +283,124 @@ transform: scale(.7);
 
 
 
+
+
+
+.contLogo{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 136%;
+}
+
+
+
+
+
+
+.cblanco{
+
+
+  position: absolute;
+  top: 33%;
+  right: 17%;
+}
+
+
+.dis{
+
+position: absolute;
+color: black;
+margin-top: 70%;
+width: 235px;
+text-align: justify;
+
+margin-left: 18%;
+
+
+font-size: 20px;
+font-weight: 700;
+
+
+
+}
+
+.instagram{
+
+  position: absolute;
+
+  top: 70%;
+  transform: scale(.5);
+  /* margin-left: 120px; */
+right: 15px;
+
+}
+
+
+
+.iG{
+
+width: 50px;
+margin-left: 20rem;
+
+}
+
+.logo1{
+
+
+position: absolute;
+bottom: 0;
+z-index: 6;
+}
+
+.desk{
+
+z-index: 0;
+  background-image: url(../public/assets/img/desk1.png);
+  width: 100%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+        
+.logoDesk{
+
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  
+}
+
+
+.contMsj{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 7%;
+gap: 5px;
+
+}
+
+
+.parrafo1{
+
+color: black;
+font-weight: 700;
+width: 18rem;
+height: 20rem;
+position: absolute;
+
+
+
+
+}
+p{
+
+font-size: 25px;
+ text-align: justify;
+
+}

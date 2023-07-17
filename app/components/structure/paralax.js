@@ -11,6 +11,7 @@ import M4 from "./svgComponents/Montana4";
 import Msj from "./svgComponents/Msj";
 import Ig from "./svgComponents/Ig";
 import Fondo1Cel from "./Fondo1Cel";
+import Logo from "./svgComponents/Logo";
 
 export default function Paralax() {
   // const [mont, setmont] = useState("");
@@ -80,6 +81,9 @@ export default function Paralax() {
       <M2 />
       <M3 />
       <M4 />
+      <div className="logo1">
+        <Logo />
+      </div>
 
       <div className="info">
         <Msj />

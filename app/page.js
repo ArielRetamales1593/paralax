@@ -8,6 +8,7 @@ import Info from "./components/structure/Info";
 import Video from "./components/structure/Video";
 import { useState, useEffect } from "react";
 import Fondo1Cel from "./components/structure/Fondo1Cel";
+import FondoDesk from "./components/structure/svgComponents/FondoDesk";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 6000);
+      setIsMobile(window.innerWidth <= 600);
     };
 
     handleResize(); // Verificar el ancho de la ventana al cargar la página
@@ -40,17 +41,8 @@ export default function Home() {
       <div>
         {isLoading ? (
           <Video />
-        ) : (
-          <div>
-            {isMobile ? (
-              <Fondo1Cel />
-            ) : (
-              <div>
-                <Paralax />
-              </div>
-            )}
-          </div>
-        )}
+        ) : (<FondoDesk/>)
+          }
       </div>
 
       {/* <Fondo1Cel />
