@@ -891,6 +891,27 @@
       ],
       "async": false
     },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\public\\css\\media.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Video.js": {
       "id": "(app-client)/./app/components/structure/Video.js",
       "name": "*",
@@ -938,20 +959,6 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
     }
   }
 }

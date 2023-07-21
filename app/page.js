@@ -2,6 +2,7 @@
 
 import Video from "./components/structure/Video";
 import { useState, useEffect } from "react";
+import { CSSTransition } from "react-transition-group";
 
 import FondoDesk from "./components/structure/svgComponents/FondoDesk";
 
@@ -15,25 +16,42 @@ export default function Home() {
     }, 10000); // Cambia este valor al tiempo que desees que dure la animación
   }, []);
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 600);
-    };
+    // Cambiar el valor de showVideo después de que se complete la animación de carga
+    const timeout = setTimeout(() => {
+      setShowVideo(false);
+    }, 1000); // Cambia este valor al tiempo que desees que dure la transición del video
 
-    handleResize(); // Verificar el ancho de la ventana al cargar la página
-
-    window.addEventListener("resize", handleResize); // Agregar el evento de cambio de tamaño de ventana
-
-    return () => {
-      window.removeEventListener("resize", handleResize); // Limpiar el evento al desmontar el componente
-    };
-  }, []);
+    return () => clearTimeout(timeout);
+  }, [isLoading]);
 
   return (
     <>
-      <div>{isLoading ? <Video /> : <FondoDesk />}</div>
+      <CSSTransition
+        in={showVideo && isLoading} // Mostrar el video solo si isLoading es true y showVideo es true
+        timeout={10000} // El tiempo de duración de la transición del video (1 segundo en este ejemplo)
+        classNames="fade"
+        unmountOnExit
+      >
+        <div>
+          <Video />
+        </div>
+      </CSSTransition>
+
+      <CSSTransition
+        in={!showVideo && !isLoading} // Mostrar FondoDesk solo si isLoading es false y showVideo es false
+        timeout={5000} // El tiempo de duración de la transición de FondoDesk (1 segundo en este ejemplo)
+        classNames="fade"
+        unmountOnExit
+      >
+        <div>
+          <FondoDesk />
+        </div>
+      </CSSTransition>
+
+      {/* <div>{isLoading ? <Video /> : <FondoDesk />}</div> */}
     </>
   );
 }
