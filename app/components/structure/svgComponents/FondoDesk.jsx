@@ -9,7 +9,12 @@ const FondoDesk = () => {
       </div>
 
       <div className="contMsj">
-        <img width={320} src="/assets/img/blanco.png" alt="" />
+        <img
+          className="marco"
+          width={320}
+          src="/assets/img/blanco.png"
+          alt=""
+        />
         <a href="https://www.instagram.com/de_eme_taller/?hl=es">
           <img className="iG" src="/assets/img/ig.svg" alt="" />
         </a>
