@@ -167,13 +167,14 @@ Beige #FFF9F6
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+
+ 
 }
 
 body {
@@ -372,6 +373,8 @@ bottom: 0;
 z-index: 6;
 }
 
+
+/* vista princpial */
 .desk{
 
 z-index: 0;
@@ -381,6 +384,7 @@ z-index: 0;
 
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
         
@@ -438,4 +442,120 @@ font-size: 25px;
 .fade-exit-active {
   opacity: 0;
   transition: opacity 15s;
+}
+
+
+
+
+
+
+/* footer */
+.redesSociales{
+
+display: flex;
+gap: 4rem;
+list-style: none;
+justify-content: center;
+align-items: center;
+margin-left: 5%;
+margin-top: 20px;
+
+}
+.ubi{
+
+  text-align: justify;
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 1.33rem;
+
+}
+
+
+.contSlider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* slider */
+
+
+
+
+/* .
+.slider{
+  aspect-ratio: 1/1;
+  width: 300px;
+  position: relative;
+  display: flex;
+overflow:auto;
+  scroll-snap-type: x mandatory;
+
+
+
+}
+.slider img{
+
+width: 100%;
+left: 0;
+position: sticky;
+object-fit: cover;
+scroll-snap-align: center;
+
+
+
+
+} */
+
+.slider{ display: flex;
+width: 70rem;
+height: 430px;
+margin-top: 5%;
+border: solid white 2px
+;
+margin-bottom: 5rem;
+
+}
+
+.slider img{
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .6;
+transition: .5s ease ;
+border-radius: 2px;
+
+
+
+
+}
+.slider img:hover{
+  cursor: crosshair;
+  width: 700px;
+  opacity: 1;
+  filter:contrast(120%);
+  
+
+
+
+}
+
+.contenido{
+
+
+  margin: 5rem
+  ;
+}
+
+.bienvenida{
+
+  display: flex;
+  gap:2px ;
+  margin: 5rem;
+}
+.bienvenida__parrafo{
+font-size: 20px;
+margin-right: 2px;
 }
