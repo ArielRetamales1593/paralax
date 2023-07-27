@@ -9,8 +9,7 @@
   height: 100vh;
 
   background-repeat: no-repeat;
-  background-size: cover; 
-  
+  background-size: cover;
 }
 .contLogin {
   display: flex;
@@ -19,6 +18,9 @@
   margin: 15%;
   gap: 20px;
   padding: 2%;
+  background-color: #101623;
+  border: solid white 3px;
+  opacity: 1.2;
 }
 
 .form {

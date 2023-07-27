@@ -1,0 +1,115 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Footer/Footer.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Fol3Y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 200px;
+  margin-top: 20%;
+}
+
+.Footer_contFooter__vjkmZ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/_next/static/media/montana1.8f4b1405.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Footer_redesSociales__5jzI4 {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.Footer_ubi__spX5X {
+  text-align: justify;
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 1.33rem;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Nav/Nav.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_nav1__KdVpm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 20px;
+  font-family: var(--font-mono);
+  z-index: 1;
+}
+
+.Nav_nav2__GstG2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  font-size: 22px;
+  list-style: none;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Slider/Slider.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Slider_contSlider__2dGmB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Slider_slider__gObZj {
+  display: flex;
+  width: 70rem;
+  height: 430px;
+  margin-top: 5%;
+  border: solid white 2px;
+  margin-bottom: 5rem;
+}
+
+.Slider_slider__gObZj .Slider_foto__g2BGX {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: 0.5s ease;
+  border-radius: 2px;
+}
+.Slider_slider__gObZj .Slider_foto__g2BGX:hover {
+  cursor: crosshair;
+  width: 700px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Contenido/Contenido.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+.Contenido_contenido__aHOtJ {
+  margin: 5rem;
+}
+
+.Contenido_bienvenida__XAxAQ {
+  display: flex;
+  gap: 30px;
+  margin: 5rem;
+  align-items: center;
+}
+.Contenido_parrafo__Rd8vU {
+  font-size: 22px;
+  margin-right: 2px;
+}
+
+.Contenido_titulo__EuFBi {
+  margin-left: 4rem;
+}
+
