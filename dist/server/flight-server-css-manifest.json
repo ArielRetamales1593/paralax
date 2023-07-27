@@ -4,15 +4,23 @@
       "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
       "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css"
     ],
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\about\\page.js": [
-      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.module.css"
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.js": [
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\public\\css\\media.css"
+    ],
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\login\\page.js": [
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\loginAndForm.module.css"
     ]
   },
   "cssModules": {
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\about\\page": [
-      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.module.css",
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page": [
       "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css",
-      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}"
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\public\\css\\media.css"
+    ],
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\login\\page": [
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css",
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
+      "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\loginAndForm.module.css"
     ]
   }
 }

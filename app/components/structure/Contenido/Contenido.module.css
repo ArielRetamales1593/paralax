@@ -1,0 +1,18 @@
+.contenido {
+  margin: 5rem;
+}
+
+.bienvenida {
+  display: flex;
+  gap: 30px;
+  margin: 5rem;
+  align-items: center;
+}
+.parrafo {
+  font-size: 22px;
+  margin-right: 2px;
+}
+
+.titulo {
+  margin-left: 4rem;
+}
