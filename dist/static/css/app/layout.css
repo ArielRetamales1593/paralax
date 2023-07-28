@@ -1,6 +1,45 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.js","import":"PT_Sans","arguments":[{"weight":["400","700"],"subsets":["latin"]}],"variableName":"sans"} ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Footer/Footer.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Fol3Y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 200px;
+  margin-top: 20%;
+}
+
+.Footer_contFooter__vjkmZ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/_next/static/media/montana1.8f4b1405.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Footer_redesSociales__5jzI4 {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.Footer_ubi__spX5X {
+  text-align: justify;
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 1.33rem;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.js","import":"PT_Sans","arguments":[{"weight":["400","700"],"subsets":["latin"]}],"variableName":"ptSans"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__PT_Sans_ad3d1b';
@@ -87,13 +126,10 @@ Celeste #CAD6FF
 Beige #FFF9F6
  */
 
-
-
-
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: "PT_Sans", 
+  --font-mono: "PT_Sans";
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -103,8 +139,8 @@ Beige #FFF9F6
     from 180deg at 50% 50%,
     #16abff33 0deg,
     #0885ff33 55deg,
-    #54d6ff33 120deg,W
-    #0071ff33 160deg,
+    #54d6ff33 120deg,
+    W #0071ff33 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
@@ -173,16 +209,12 @@ Beige #FFF9F6
 html,
 body {
   max-width: 100vw;
-
- 
 }
 
 body {
   color: rgb(var(--foreground-rgb));
- 
-  background:#101623
-;
 
+  background: #101623;
 }
 
 a {
@@ -190,17 +222,11 @@ a {
   text-decoration: none;
 }
 
-
-
-
-.video2{
- 
+.video2 {
   padding: 5%;
   padding-top: 0%;
+  overflow: hidden;
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -208,114 +234,60 @@ a {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.rs{
-
-
-
- z-index: 3;
- margin-left: 43%;
- margin-top: 10px;
-
-
- ;
-
-
-
+.rs {
+  z-index: 3;
+  margin-left: 43%;
+  margin-top: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.contLogo{
-
+.contLogo {
   display: flex;
   justify-content: center;
   margin-top: 136%;
 }
 
-
-
-
-
-
-.cblanco{
-
-
+.cblanco {
   position: absolute;
   top: 33%;
   right: 17%;
 }
 
+.dis {
+  position: absolute;
+  color: black;
+  margin-top: 70%;
+  width: 235px;
+  text-align: justify;
 
-.dis{
+  margin-left: 18%;
 
-position: absolute;
-color: black;
-margin-top: 70%;
-width: 235px;
-text-align: justify;
-
-margin-left: 18%;
-
-
-font-size: 20px;
-font-weight: 700;
-
-
-
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.instagram{
-
+.instagram {
   position: absolute;
 
   top: 70%;
-  transform: scale(.5);
+  transform: scale(0.5);
   /* margin-left: 120px; */
-right: 15px;
-
+  right: 15px;
 }
 
-
-
-.iG{
-
-width: 50px;
-margin-left: 20rem;
-
+.iG {
+  width: 50px;
+  margin-left: 20rem;
 }
 
-.logo1{
-
-
-position: absolute;
-bottom: 0;
-z-index: 6;
+.logo1 {
+  position: absolute;
+  bottom: 0;
+  z-index: 6;
 }
-
 
 /* vista princpial */
-.desk{
-
-z-index: 0;
+.desk {
+  z-index: 0;
   background-image: url(/_next/static/media/desk1.90a0cf40.png);
   width: 100%;
   height: 100vh;
@@ -325,47 +297,32 @@ z-index: 0;
   overflow: hidden;
 }
 
-        
-.logoDesk{
-
+.logoDesk {
   position: absolute;
   bottom: 1%;
   left: 1%;
-  
 }
 
-
-.contMsj{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 7%;
-gap: 5px;
-
+.contMsj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  gap: 5px;
 }
 
-
-.parrafo1{
-
-color: black;
-font-weight: 700;
-width: 18rem;
-height: 20rem;
-position: absolute;
-
-
-
-
+.parrafo1 {
+  color: black;
+  font-weight: 700;
+  width: 18rem;
+  height: 20rem;
+  position: absolute;
 }
-p{
-
-font-size: 25px;
- text-align: justify;
-
+p {
+  font-size: 25px;
+  text-align: justify;
 }
-
 
 .fade-enter {
   opacity: 0;
@@ -382,26 +339,13 @@ font-size: 25px;
   transition: opacity 15s;
 }
 
-
-
-
-
-
-
-
-
-.contSlider{
+.contSlider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
 /* slider */
-
-
-
 
 /* .
 .slider{
@@ -428,4 +372,24 @@ scroll-snap-align: center;
 
 } */
 
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[7].use[3]!./app/components/structure/Nav/Nav.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_nav1__KdVpm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.Nav_nav2__GstG2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  font-size: 19px;
+  list-style: none;
+}
 

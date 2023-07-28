@@ -6,13 +6,18 @@
   display: flex;
   gap: 30px;
   margin: 5rem;
-  align-items: center;
 }
 .parrafo {
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 2px;
 }
 
 .titulo {
   margin-left: 4rem;
+
+  font-size: 50px;
+}
+
+.foto {
+  border: solid 2px white;
 }

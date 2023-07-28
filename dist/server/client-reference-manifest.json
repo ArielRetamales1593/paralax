@@ -295,6 +295,26 @@
         "chunks": [],
         "async": false
       }
+    },
+    "(app-client)/./app/components/structure/Form/Form.js": {
+      "*": {
+        "id": "(sc_client)/./app/components/structure/Form/Form.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/structure/Form/Form.js",
+        "name": "",
+        "chunks": [],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/structure/Form/Form.js",
+        "name": "default",
+        "chunks": [],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -975,7 +995,8 @@
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/page.css"
+        "static/css/app/page.css",
+        "static/css/app/contact/page.css"
       ]
     },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Video.js": {
@@ -1033,24 +1054,18 @@
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}#": {
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"PT_Sans\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"ptSans\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Contenido\\Contenido.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/about/page.css"
-      ]
-    },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Footer\\Footer.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
+        "static/css/app/layout.css",
         "static/css/app/about/page.css"
       ]
     },
@@ -1058,14 +1073,7 @@
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/about/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Slider\\Slider.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/about/page.css"
+        "static/css/app/layout.css"
       ]
     },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Footer\\Footer.js": {
@@ -1091,6 +1099,48 @@
         "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Banner\\Banner.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/about/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Cards\\Cards.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/about/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Contenido\\Contenido.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/about/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Slider\\Slider.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/about/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Gallery\\Gallery.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/gallery/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Catalogo\\Catalogo.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/products/page.css"
+      ]
     },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\loginAndForm.module.css#": {
       "id": "null",
@@ -1168,6 +1218,37 @@
       "name": "default",
       "chunks": [
         "app/login/page:static/chunks/app/login/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/contact/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js": {
+      "id": "(app-client)/./app/components/structure/Form/Form.js",
+      "name": "*",
+      "chunks": [
+        "app/contact/page:static/chunks/app/contact/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js#": {
+      "id": "(app-client)/./app/components/structure/Form/Form.js",
+      "name": "",
+      "chunks": [
+        "app/contact/page:static/chunks/app/contact/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js#default": {
+      "id": "(app-client)/./app/components/structure/Form/Form.js",
+      "name": "default",
+      "chunks": [
+        "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
     }

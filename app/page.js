@@ -3,6 +3,7 @@
 import Video from "./components/structure/Video";
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
+import styles from "./page.module.css";
 
 import FondoDesk from "./components/structure/svgComponents/FondoDesk";
 

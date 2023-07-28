@@ -5,18 +5,14 @@ function Contenido() {
   return (
     <div className={styles.contenido}>
       <h1 className={styles.titulo}> ¡Bienvenido a DM Taller!</h1>
-
       <div className={styles.bienvenida}>
         <p className={styles.parrafo}>
           Nos apasiona crear piezas de mobiliario excepcionales que complementen
           tu estilo de vida y realcen la belleza de tu hogar. Nuestro equipo de
           artesanos y diseñadores altamente capacitados trabajan con dedicación
           y atención al detalle para ofrecerte muebles de la más alta calidad.
-          Ya sea que estés buscando ese sofá perfecto para relajarte después de
-          un largo día, una mesa de comedor que se convierta en el centro de
-          atención en tus cenas familiares o una cómoda que combine
-          funcionalidad y elegancia en tu dormitorio, en DM Taller encontrarás
-          una amplia selección de muebles para cada espacio de tu Hogar
+          En DM Taller encontrarás una amplia selección de muebles para cada
+          espacio de tu Hogar
           {/* tu hogar. Nos enorgullece utilizar materiales duraderos y sostenibles en
         la fabricación de nuestros muebles. Cada pieza es cuidadosamente
         elaborada para garantizar su resistencia y longevidad, mientras que
@@ -37,7 +33,11 @@ function Contenido() {
         en DM Taller y déjanos ser parte de tu historia de diseño! */}
         </p>
 
-        <img width={500} src="/assets/img/captura.jpg"></img>
+        <img
+          className={styles.foto}
+          width={500}
+          src="/assets/img/captura.jpg"
+        ></img>
       </div>
     </div>
   );

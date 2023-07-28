@@ -15,7 +15,7 @@ export default function Admin({}) {
       {/* <Nav usuario={user.email} /> */}
       <h1>hola</h1>
 
-      <p> hola </p>
+      <p>Este es el sitio privado, para el admin</p>
       <button onClick={logOut} className="bt1">
         logout
       </button>

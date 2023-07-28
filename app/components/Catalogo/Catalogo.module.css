@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.best {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: black;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.material .precio {
+  font-size: 2px !important;
+}
