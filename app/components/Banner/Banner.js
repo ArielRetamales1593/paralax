@@ -10,7 +10,7 @@ const Banner = () => {
         <img
           className={styles.logo}
           src="/assets/logos/logoCompleto.svg"
-          width={400}
+          width={300}
         />
         {/* <p className={styles.parrafo}>
           Proyectos de carpintería de autor diseñados y fabricados por

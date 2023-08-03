@@ -22,7 +22,7 @@
 }
 .slider .foto:hover {
   cursor: crosshair;
-  width: 700px;
+  width: 500px;
   opacity: 1;
   filter: contrast(120%);
 }

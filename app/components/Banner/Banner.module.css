@@ -1,18 +1,38 @@
 .fondo {
   margin-top: 2%;
+
   background-image: url(../../../public/assets/img/madera.png);
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  animation: banner 10s infinite linear alternate;
   gap: 20px;
   border: solid white 2px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -6;
+}
+
+@keyframes banner {
+  0%,
+  30% {
+    background-image: url(../../../public/assets/img/banner//CZ2.jpg);
+  }
+  35%,
+  50% {
+    background-image: url(../../../public/assets/img/banner/CZ20.jpg);
+  }
+  55%,
+  75% {
+    background-image: url(../../../public/assets/img/banner/sillaContraveta.JPG);
+  }
+  80%,
+  100% {
+    background-image: url(../../../public/assets/img/banner/contraveta3.JPG);
+  }
 }
 
 .bienvenida {

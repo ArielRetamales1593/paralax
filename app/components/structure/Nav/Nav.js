@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav1}>
       <div>
-        <img src="/assets/logos/logo.svg" alt="" width={200} />
+        <img src="/assets/logos/logo.svg" alt="" width={150} />
       </div>
 
       <ul className={styles.nav2}>

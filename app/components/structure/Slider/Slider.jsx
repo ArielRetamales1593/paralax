@@ -5,9 +5,21 @@ const Slider = () => {
   return (
     <div className={styles.contSlider}>
       <section className={styles.slider}>
-        <img className={styles.foto} src="/assets/img/mueble1.png" alt="/" />
-        <img className={styles.foto} src="/assets/img/mueble2.png" alt="" />
-        <img className={styles.foto} src="/assets/img/mueble3.png" alt="" />
+        <img
+          className={styles.foto}
+          src="https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Rack%20Lenga%20(2).jpg"
+          alt="/"
+        />
+        <img
+          className={styles.foto}
+          src="https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/CZ2.jpg"
+          alt=""
+        />
+        <img
+          className={styles.foto}
+          src="https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Repisero%20Rodrigo%20Herrera%20(39).JPG"
+          alt=""
+        />
       </section>
     </div>
   );

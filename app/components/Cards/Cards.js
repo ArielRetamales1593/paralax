@@ -5,7 +5,7 @@ const Card = ({ name, material, price, image }) => {
   return (
     <div className={styles.card}>
       <h2>Productos Nuevo</h2>
-      <img src={image} alt={name} width={300} height={300} />
+      <img src={image} alt={name} width={200} height={200} />
       <div className="card-content">
         <h3>{name}</h3>
         <p className={styles.material}>Material: {material}</p>

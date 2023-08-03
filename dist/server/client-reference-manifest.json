@@ -176,46 +176,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/components/structure/Video.js": {
-      "*": {
-        "id": "(sc_client)/./app/components/structure/Video.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/components/structure/Video.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/components/structure/Video.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/page.js": {
-      "*": {
-        "id": "(sc_client)/./app/page.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/page.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/page.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./app/components/structure/Footer/Footer.js": {
       "*": {
         "id": "(sc_client)/./app/components/structure/Footer/Footer.js",
@@ -231,86 +191,6 @@
       },
       "default": {
         "id": "(sc_client)/./app/components/structure/Footer/Footer.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/admin/page.js": {
-      "*": {
-        "id": "(sc_client)/./app/admin/page.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/admin/page.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/admin/page.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/components/LoginForm/LoginAndForm.js": {
-      "*": {
-        "id": "(sc_client)/./app/components/LoginForm/LoginAndForm.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/components/LoginForm/LoginAndForm.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/components/LoginForm/LoginAndForm.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/login/page.js": {
-      "*": {
-        "id": "(sc_client)/./app/login/page.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/login/page.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/login/page.js",
-        "name": "default",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/components/structure/Form/Form.js": {
-      "*": {
-        "id": "(sc_client)/./app/components/structure/Form/Form.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/components/structure/Form/Form.js",
-        "name": "",
-        "chunks": [],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/components/structure/Form/Form.js",
         "name": "default",
         "chunks": [],
         "async": false
@@ -991,62 +871,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\public\\css\\media.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/page.css",
-        "static/css/app/contact/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Video.js": {
-      "id": "(app-client)/./app/components/structure/Video.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Video.js#": {
-      "id": "(app-client)/./app/components/structure/Video.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Video.js#default": {
-      "id": "(app-client)/./app/components/structure/Video.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.js": {
-      "id": "(app-client)/./app/page.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.js#": {
-      "id": "(app-client)/./app/page.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\page.js#default": {
-      "id": "(app-client)/./app/page.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\globals.css#": {
       "id": "null",
       "name": "default",
@@ -1107,7 +931,14 @@
         "static/css/app/about/page.css"
       ]
     },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Cards\\Cards.module.css#": {
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Pro\\Pros.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/about/page.css"
+      ]
+    },
+    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\plan\\Plan.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -1127,130 +958,6 @@
       "chunks": [
         "static/css/app/about/page.css"
       ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Gallery\\Gallery.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/gallery/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\Catalogo\\Catalogo.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/products/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\loginAndForm.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/login/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\admin\\page.js": {
-      "id": "(app-client)/./app/admin/page.js",
-      "name": "*",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\admin\\page.js#": {
-      "id": "(app-client)/./app/admin/page.js",
-      "name": "",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\admin\\page.js#default": {
-      "id": "(app-client)/./app/admin/page.js",
-      "name": "default",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\LoginAndForm.js": {
-      "id": "(app-client)/./app/components/LoginForm/LoginAndForm.js",
-      "name": "*",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\LoginAndForm.js#": {
-      "id": "(app-client)/./app/components/LoginForm/LoginAndForm.js",
-      "name": "",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\LoginForm\\LoginAndForm.js#default": {
-      "id": "(app-client)/./app/components/LoginForm/LoginAndForm.js",
-      "name": "default",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\login\\page.js": {
-      "id": "(app-client)/./app/login/page.js",
-      "name": "*",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\login\\page.js#": {
-      "id": "(app-client)/./app/login/page.js",
-      "name": "",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\login\\page.js#default": {
-      "id": "(app-client)/./app/login/page.js",
-      "name": "default",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/contact/page.css"
-      ]
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js": {
-      "id": "(app-client)/./app/components/structure/Form/Form.js",
-      "name": "*",
-      "chunks": [
-        "app/contact/page:static/chunks/app/contact/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js#": {
-      "id": "(app-client)/./app/components/structure/Form/Form.js",
-      "name": "",
-      "chunks": [
-        "app/contact/page:static/chunks/app/contact/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\nreta\\OneDrive\\Escritorio\\paralax\\Nueva carpeta\\dtaller\\app\\components\\structure\\Form\\Form.js#default": {
-      "id": "(app-client)/./app/components/structure/Form/Form.js",
-      "name": "default",
-      "chunks": [
-        "app/contact/page:static/chunks/app/contact/page.js"
-      ],
-      "async": false
     }
   }
 }
