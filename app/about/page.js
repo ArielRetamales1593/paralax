@@ -12,9 +12,9 @@ const page = () => {
       <Nav />
 
       <Banner />
-      <Plan />
-      <Contenido />
 
+      <Contenido />
+      <Plan />
       <Slider />
 
       <Pros />

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  gap: 200px;
+  gap: 100px;
   margin-top: 20%;
 }
 
@@ -20,7 +20,7 @@
 
 .redesSociales {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -31,5 +31,5 @@
   text-align: justify;
   font-weight: 400;
   margin-top: 5px;
-  font-size: 1.33rem;
+  font-size: 1.3rem;
 }

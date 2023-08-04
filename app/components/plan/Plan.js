@@ -3,24 +3,27 @@ import styles from "./Plan.module.css";
 
 const Plan = () => {
   return (
-    <div className={styles.contenedor}>
-      <figure>
-        <h3 className={styles.num}>1</h3>
-        <div className={styles.card} alt="Mountains" />
+    <div className={styles.planes}>
+      <h2>Nuestros Servicios</h2>
+      <div className={styles.contenedor}>
+        <div className={styles.card} alt="Mountains">
+          <h3 className={styles.titulo}>Económicos</h3>
+          <p>
+            Para trabajos en roble, coigüe, raulí, lenga u otras maderas
+            nativas.
+          </p>
+        </div>
 
-        <figcaption>The Day</figcaption>
-      </figure>
-      <figure>
-      <h3 className={styles.num}>2</h3>
-        <div className={styles.card} />
-        <figcaption>The Night</figcaption>
-      </figure>
+        <div className={styles.card} alt="Mountains">
+          <h3 className={styles.titulo}>Standar</h3>
+          <p>Para trabajos en tableros de pino laminados</p>
+        </div>
 
-      <figure>
-      <h3 className={styles.num}>3</h3>
-        <div className={styles.card} />
-        <figcaption>The Night</figcaption>
-      </figure>
+        <div className={styles.card} alt="Mountains">
+          <h3 className={styles.titulo}>Premiun</h3>
+          <p>Para trabajos en tableros de terciado mueblería.</p>
+        </div>
+      </div>
     </div>
   );
 };
