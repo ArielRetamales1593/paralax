@@ -4,7 +4,7 @@ import React from "react";
 import loginwithEmailAndPassword from "../../function/loginEmail";
 import registerUser from "../../function/register";
 import loginGoogle from "../../function/loginGoogle";
-import style from "./loginAndForm.module.css";
+import style from "./LoginAndForm.module.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
