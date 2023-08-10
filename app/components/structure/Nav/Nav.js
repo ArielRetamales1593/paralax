@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav1}>
       <div>
-        <img src="/assets/logos/logo.svg" alt="" width={150} />
+        <img src="/assets/logos/logo.svg" alt="" width={250} />
       </div>
 
       <ul className={styles.nav2}>
@@ -23,7 +23,7 @@ export default function Nav() {
         </a>
       </ul>
       <a href="./index.js">
-        <p>Cotiza aquí</p>
+        <p className={styles.cotiza}>Cotiza aquí</p>
       </a>
     </nav>
   );

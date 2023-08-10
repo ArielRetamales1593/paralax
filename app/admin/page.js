@@ -1,14 +1,22 @@
 "use client";
-
+import Leer from "../function/read";
 import React from "react";
 import logOut from "../function/logOut";
 // import Nav from "../components/Nav";
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import ConsultaUsuarios from "../components/Consulta Usuarios/ConsultaUsuarios";
 export default function Admin({}) {
-  // useEffect(() => {
-  //   Leer();
-  // }, []);
+  useEffect(() => {
+    Leer()
+      .then((consulta) => {
+        setConsulta(consulta);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  }, []);
+
+  const [allConsulta, setConsulta] = useState(null);
 
   return (
     <main>
@@ -24,6 +32,9 @@ export default function Admin({}) {
       {/* <button onClick={logOut} className="bt1">
         logout
       </button> */}
+
+      {allConsulta &&
+        allConsulta.map((consulta) => <ConsultaUsuarios consulta={consulta} />)}
     </main>
   );
 }

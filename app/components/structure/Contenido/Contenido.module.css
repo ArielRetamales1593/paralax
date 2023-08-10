@@ -1,5 +1,9 @@
 .contenido {
-  margin: 5rem;
+  background-image: url(../../../../public/assets/img/arbol2.png);
+  background-size: auto;
+  height: 40rem;
+  padding: 2rem;
+  margin-top: 5rem;
 }
 
 .bienvenida {

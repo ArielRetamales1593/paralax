@@ -1,32 +1,29 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import createContacto from "@/app/function/createContacto";
+
 import styles from "./Form.module.css";
 
 const Form = () => {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    telefono: "",
-    asunto: "",
-    mensaje: "",
-    privacidad: false,
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    const inputValue = type === "checkbox" ? checked : value;
-    setFormData({
-      ...formData,
-      [name]: inputValue,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario a través de una API o realizar alguna acción con los datos.
-    console.log(formData);
-  };
+    const nombre = e.target.nombre.value;
+    const email = e.target.email.value;
+    const telefono = e.target.telefono.value;
+    const asunto = e.target.asunto.value;
+    const mensaje = e.target.mensaje.value;
+
+    console.log("hola ", nombre, telefono);
+
+    const data = { nombre, email, telefono, asunto, mensaje };
+    await createContacto(data);
+    e.target.nombre.value =
+      e.target.email.value =
+      e.target.telefono.value =
+      e.target.nombre.value =
+      e.target.mensaje.value =
+        "";
+  }
 
   return (
     <>
@@ -37,45 +34,19 @@ const Form = () => {
           </div>
           <form onSubmit={handleSubmit} className={styles.form}>
             <label htmlFor="nombre">Nombre:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              value={formData.nombre}
-              onChange={handleChange}
-              required
-            />
+            <input type="text" id="nombre" name="nombre" required />
             <br />
 
             <label htmlFor="email">Correo electrónico:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
+            <input type="email" id="email" name="email" required />
             <br />
 
             <label htmlFor="telefono">Teléfono:</label>
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              value={formData.telefono}
-              onChange={handleChange}
-            />
+            <input type="tel" id="telefono" name="telefono" />
             <br />
 
             <label htmlFor="asunto">Asunto:</label>
-            <select
-              id="asunto"
-              name="asunto"
-              value={formData.asunto}
-              onChange={handleChange}
-              required
-            >
+            <select id="asunto" name="asunto" required>
               <option value="">Seleccione una opción</option>
               <option value="productos">Consulta sobre productos</option>
               <option value="precios">Consulta sobre precios</option>
@@ -85,26 +56,7 @@ const Form = () => {
             <br />
 
             <label htmlFor="mensaje">Mensaje:</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              value={formData.mensaje}
-              onChange={handleChange}
-              rows="4"
-              required
-            ></textarea>
-            <br />
-            <label htmlFor="privacidad">Acepto la política de privacidad</label>
-            <input
-              className={styles.check}
-              type="checkbox"
-              id="privacidad"
-              name="privacidad"
-              checked={formData.privacidad}
-              onChange={handleChange}
-              required
-            />
-
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             <br />
 
             <button type="submit">Enviar consulta</button>
