@@ -1,11 +1,11 @@
 import React from "react";
-import Productos from "../components/Catalogo/Catalago";
+import Catalago from "../components/Catalogo/Catalago";
 
 const page = () => {
   return (
     <div>
       <h1> Productos y acá van los filtros</h1>
-      <Productos />
+      <Catalago />
     </div>
   );
 };

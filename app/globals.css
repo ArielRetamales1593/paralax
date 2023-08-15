@@ -4,6 +4,9 @@ Gris claro #424B54
 Naranjo #E98E2D
 Celeste #CAD6FF
 Beige #FFF9F6
+amarillo #FFCC00
+
+
  */
 
 :root {
@@ -105,10 +108,10 @@ a {
 a::first-letter {
   font-weight: 700;
 }
-p::first-letter {
+/* p::first-letter {
   font-weight: 700;
   font-size: 25px;
-}
+} */
 
 .video2 {
   padding: 5%;

@@ -6,6 +6,8 @@ import Contenido from "../components/structure/Contenido/Contenido";
 import Banner from "../components/Banner/Banner";
 import Plan from "../components/plan/Plan";
 import Pros from "../components/Pro/Pros";
+import Pros2 from "../components/Pros2/Pros2";
+import TImeLine from "../components/TimeLine/TImeLine";
 const page = () => {
   return (
     <div>
@@ -18,6 +20,10 @@ const page = () => {
       <Slider />
 
       <Pros />
+
+      <Pros2 />
+
+      <TImeLine />
       <Footer />
     </div>
   );

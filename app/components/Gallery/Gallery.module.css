@@ -13,9 +13,8 @@
   padding: 2%;
 }
 
-.logo {
-  margin-top: 70%;
-  margin-left: 70%;
+.img {
+  width: 100%;
 }
 
 .container .box figure {

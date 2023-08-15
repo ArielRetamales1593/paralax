@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  padding: 140px;
+  gap: 200px;
+  overflow-x: scroll;
+  border: solid 2px white;
+  background-color: #e98e2d;
+}
+
+/* .container::-webkit-scrollbar {
+  background-color: #e98e2d;
+} */
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+/* .exclusividad,
+    .ajuste-perfecto,
+    .calidad-artesanal,
+    .materiales-primera,
+    .expresion-identidad {
+      /* Estilos para cada celda con los iconos */
+/* Puedes ajustar el tamaño, color, etc. según tus preferencias } */
+
+/* .imagen-central {
+      /* Estilos para la celda con la imagen central */
+/* Puedes ajustar el tamaño, bordes, etc. según tus preferencias */
+/* } */
+
+.modal {
+  background-color: black;
+}
+.item {
+  position: relative;
+  list-style: none;
+
+  background: white;
+  margin: 0 20px;
+  border-radius: 50%;
+  transition: 0.5s;
+
+  margin-bottom: 20px;
+}
+
+.item:hover {
+  background-color: black;
+  box-shadow: 0 0 0 4px #333, 0 0 0 6px #333;
+}
+
+.contenido {
+  position: absolute;
+  bottom: 2px;
+  width: 301px;
+  background: #fff;
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  color: black;
+  font-size: 16px;
+  transform: translateX(0%) translateY(-10px);
+}
+.contenido::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 30px;
+  background-color: white;
+  bottom: -11px;
+  left: 8.7rem;
+  transform: rotate(45deg);
+}
+
+.pro:hover .contenido {
+  visibility: visible;
+  opacity: 1;
+  /* transform: translateX(-50%) translateY(20px); */
+}
+
+.proName {
+  width: 200px;
+}
+
+.imagen:hover {
+  fill: #333;
+}

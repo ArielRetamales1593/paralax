@@ -4,13 +4,26 @@ import styles from "./ConsultaUsuarios.module.css";
 const ConsultaUsuarios = ({ consulta }) => {
   return (
     <div className={styles.cont}>
-      <div className={styles.card}>
-        <h2>Nombre: {consulta.nombre}</h2>
-        <p>{consulta.email}</p>
-        <p>{consulta.telefono}</p>
-        <p>{consulta.asunto}</p>
-        <p>{consulta.mensaje}</p>
-      </div>
+      <table className={styles.table} border="1">
+        <thead>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+          <th>Asunto</th>
+          <th>Mensaje</th>
+          <th>Estado </th>
+        </thead>
+        <tr>
+          <td>{consulta.nombre}</td>
+          <td>{consulta.email}</td>
+          <td>{consulta.telefono}</td>
+          <td>{consulta.asunto}</td>
+          <td>{consulta.mensaje}</td>
+          <td>
+            <input type="checkbox" />
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };

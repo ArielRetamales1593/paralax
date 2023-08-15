@@ -46,7 +46,7 @@ export default function Footer() {
           <strong>NOSOTROS</strong>
           <ul className={styles.redesSociales}>
             <li>
-              <p className={styles.ubi}> Cotiza aquí</p>
+              <button className={styles.boton}>Cotiza Aquí</button>
             </li>
           </ul>
         </div>

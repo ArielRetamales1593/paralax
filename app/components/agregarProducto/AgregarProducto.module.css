@@ -1,0 +1,32 @@
+.fondoForm {
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.contForm {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15%;
+  gap: 20px;
+  padding: 7%;
+  background-color: #101623;
+  border: solid white 3px;
+  opacity: 1.2;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.check {
+  margin-right: 40%;
+  margin-top: 2%;
+}

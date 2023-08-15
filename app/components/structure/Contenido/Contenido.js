@@ -11,18 +11,11 @@ function Contenido() {
       <div className={styles.bienvenida}>
         <p className={styles.parrafo}>
           En dmTaller, creamos muebles a medida con un enfoque original, de
-          diseño simple y práctico. Nuestro equipo de arquitectos y artesanos se
-          dedica con cariño y rigor a materializar los anhelos y sueños de cada
-          cliente en piezas únicas. Nos comprometemos con el comercio justo, la
-          calidad artesanal y el cuidado del medio ambiente, asegurando que cada
-          artesano reciba un pago justo por su trabajo desarrollado con
-          paciencia y pasión.
+          diseño simple y práctico.
           <br /> <br />
           Cada proyecto es una oportunidad para crear muebles que reflejen tu
           personalidad y se integren perfectamente en tu espacio. Estamos
           emocionados por trabajar contigo y convertir tus ideas en realidad.
-          ¡Gracias por considerar a dmTaller como tu aliado en la creación de
-          muebles con alma!
         </p>
 
         <img

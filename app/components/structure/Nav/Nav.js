@@ -23,7 +23,7 @@ export default function Nav() {
         </a>
       </ul>
       <a href="./index.js">
-        <p className={styles.cotiza}>Cotiza aquí</p>
+        <button className={styles.cotiza}>Cotiza Aquí</button>
       </a>
     </nav>
   );

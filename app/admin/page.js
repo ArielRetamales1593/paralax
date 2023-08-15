@@ -5,7 +5,23 @@ import logOut from "../function/logOut";
 // import Nav from "../components/Nav";
 import { useEffect, useState } from "react";
 import ConsultaUsuarios from "../components/Consulta Usuarios/ConsultaUsuarios";
+import Agregar from "../components/agregarProducto/AgregarProducto";
+import ProductosAgregados from "../components/ProductosAgregados/ProductosAgregados";
+import LeerProductos from "../function/leerProductos";
+import editarProducto from "../function/editarProducto";
+import EditarModal from "../components/EditarModal/EditarModal";
+
 export default function Admin({}) {
+  function refresh() {
+    LeerProductos()
+      .then((productos) => {
+        setAllproductos(productos);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  }
+
   useEffect(() => {
     Leer()
       .then((consulta) => {
@@ -16,10 +32,15 @@ export default function Admin({}) {
       });
   }, []);
 
-  const [allConsulta, setConsulta] = useState(null);
+  useEffect(() => {
+    refresh();
+  }, []);
 
+  const [allProductos, setAllproductos] = useState(null);
+  const [allConsulta, setConsulta] = useState(null);
+  const [selectedProductos, setSelectedProductos] = useState(null);
   return (
-    <main>
+    <>
       {/* <Nav usuario={user.email} /> */}
       <h1>hola</h1>
 
@@ -33,8 +54,22 @@ export default function Admin({}) {
         logout
       </button> */}
 
+      <EditarModal productos={selectedProductos} refresh={refresh} />
+      <h2>Consulta Usuarios</h2>
       {allConsulta &&
         allConsulta.map((consulta) => <ConsultaUsuarios consulta={consulta} />)}
-    </main>
+      <h2> Agregar Productos</h2>
+      <Agregar refresh={refresh} />
+
+      <h2>Productos Agregados</h2>
+      {allProductos &&
+        allProductos.map((productos) => (
+          <ProductosAgregados
+            productos={productos}
+            setSelectedProductos={setSelectedProductos}
+            refresh={refresh}
+          />
+        ))}
+    </>
   );
 }

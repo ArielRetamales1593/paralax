@@ -67,3 +67,7 @@
 .card:hover .parrafo {
   opacity: 1; /* Al hacer hover sobre la card, activamos el párrafo cambiando su opacidad a 1 */
 }
+.planes {
+  background-image: url(../../../public/assets/svg/montana5r.svg);
+  background-size: contain;
+}
