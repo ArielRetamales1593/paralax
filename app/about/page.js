@@ -8,6 +8,7 @@ import Plan from "../components/plan/Plan";
 import Pros from "../components/Pro/Pros";
 import Pros2 from "../components/Pros2/Pros2";
 import TImeLine from "../components/TimeLine/TImeLine";
+
 const page = () => {
   return (
     <div>

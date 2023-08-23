@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { PT_Sans } from "next/font/google";
+
 import Nav from "./components/structure/Nav/Nav";
 import Footer from "./components/structure/Footer/Footer";
 

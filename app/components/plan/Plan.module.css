@@ -4,36 +4,65 @@
   align-self: center;
   gap: 40px;
   margin-top: 100px;
-  border-radius: 12px;
 }
 
 .card {
   box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+
   height: 28rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  filter: brightness(50%);
   width: 19.2rem;
-  background-image: url(../../../public/assets/img/arbol2.svg);
-  background-size: 230%;
+  background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Rack%20Lenga%20(3).jpg");
+  background-size: cover;
   gap: 20px;
-  background-color: black;
+
   color: #fff9f6;
-  border: groove 2px white;
+}
+.card2 {
+  box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+
+  height: 28rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19.2rem;
+  background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Silla%20contraveta%20(27).JPG");
+  background-size: cover;
+  gap: 20px;
+
+  color: #fff9f6;
 }
 
+.card3 {
+  box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+
+  height: 28rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19.2rem;
+  background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Sillas%20Pilar%20(40).JPG");
+  background-size: cover;
+  gap: 20px;
+
+  color: #fff9f6;
+}
 .card:hover {
   filter: brightness(100%);
-}
-
-.titulo {
-  font-size: 35px;
 }
 
 .planes {
@@ -46,15 +75,13 @@
 }
 
 .titulo {
-  margin-left: 4rem;
+  text-align: center;
 
-  font-size: 50px;
+  font-size: 3em;
 }
 
 .titulo1 {
-  margin-left: 4rem;
-
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .parrafo {
@@ -67,7 +94,28 @@
 .card:hover .parrafo {
   opacity: 1; /* Al hacer hover sobre la card, activamos el párrafo cambiando su opacidad a 1 */
 }
+.card2:hover .parrafo {
+  opacity: 1; /* Al hacer hover sobre la card, activamos el párrafo cambiando su opacidad a 1 */
+}
+.card3:hover .parrafo {
+  opacity: 1; /* Al hacer hover sobre la card, activamos el párrafo cambiando su opacidad a 1 */
+}
 .planes {
   background-image: url(../../../public/assets/svg/montana5r.svg);
   background-size: contain;
+}
+
+.boton {
+  color: white;
+  font-size: 1em;
+  background-color: #e98e2d;
+
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+
+  padding: 12px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 2px;
 }

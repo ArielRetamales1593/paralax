@@ -3,7 +3,7 @@ import styles from "./TimeLine.module.css";
 
 const TImeLine = () => {
   return (
-    <div>
+    <div className={styles.scroll}>
       <h1 className={styles.titulo}>linea</h1>
       <ul className={styles.bar}>
         <li>

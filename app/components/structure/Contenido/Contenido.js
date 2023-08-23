@@ -9,14 +9,24 @@ function Contenido() {
         Carpintería de Autor en Muebles a Medida{" "}
       </h2>
       <div className={styles.bienvenida}>
-        <p className={styles.parrafo}>
-          En dmTaller, creamos muebles a medida con un enfoque original, de
-          diseño simple y práctico.
-          <br /> <br />
-          Cada proyecto es una oportunidad para crear muebles que reflejen tu
-          personalidad y se integren perfectamente en tu espacio. Estamos
-          emocionados por trabajar contigo y convertir tus ideas en realidad.
-        </p>
+        <div className={styles.contMsj}>
+          <img
+            className="marco"
+            width={420}
+            height={370}
+            src="/assets/img/blanco222.png"
+            alt=""
+          />
+
+          <div className={styles.parrafo1}>
+            <p>
+              ¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de
+              relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+              el texto de relleno estándar de las industrias desde el año 1500,
+              cuando un impresor (N. del T. persona que se dedica a la imprenta)
+            </p>
+          </div>
+        </div>
 
         <img
           className={styles.foto}

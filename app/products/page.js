@@ -1,11 +1,11 @@
 import React from "react";
 import Catalago from "../components/Catalogo/Catalago";
+import Link from "next/link";
 
-const page = () => {
+const page = (productos) => {
   return (
     <div>
-      <h1> Productos y acá van los filtros</h1>
-      <Catalago />
+      <Catalago productos={productos} />
     </div>
   );
 };

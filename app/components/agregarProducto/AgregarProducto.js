@@ -15,7 +15,7 @@ const Agregar = ({ refresh }) => {
     const descripcion = e.target.descripcion.value;
     const url = e.target.url.value;
 
-    console.log("hola ", nombre, valor);
+    console.log("hola ", nombre, valor, tipo, url);
 
     const data1 = {
       nombre,
@@ -28,8 +28,8 @@ const Agregar = ({ refresh }) => {
     };
     await AgregarProducto(data1);
     e.target.nombre.value =
-      e.target.material.value =
       e.target.tipo.value =
+      e.target.material.value =
       e.target.valor.value =
       e.target.categoria.value =
       e.target.descripcion.value =
@@ -64,12 +64,12 @@ const Agregar = ({ refresh }) => {
             <input type="number" id="valor" name="valor" />
             <br />
 
-            <label htmlFor="asunto">Categoria:</label>
+            <label>Categoria:</label>
             <select id="categoria" name="categoria" required>
               <option value="">Seleccione una opción</option>
-              <option value="productos">Economico</option>
-              <option value="precios">Standar</option>
-              <option value="entrega">Premiun</option>
+              <option value="Economico">Economico</option>
+              <option value="Standar">Standar</option>
+              <option value="Premiun">Premiun</option>
             </select>
 
             <label htmlFor="descripcion">Descripción:</label>
@@ -80,8 +80,8 @@ const Agregar = ({ refresh }) => {
               required
             ></textarea>
             <br />
-            <label htmlFor="tipo">Url Imagen:</label>
-            <input type="text" id="url" name="tipo" />
+            <label htmlFor="url">Url Imagen:</label>
+            <input type="text" id="url" name="url" />
             <br />
 
             <button type="submit">Enviar consulta</button>

@@ -6,7 +6,7 @@ const ConsultaUsuarios = ({ consulta }) => {
     <div className={styles.cont}>
       <table className={styles.table} border="1">
         <thead>
-          <th>Nombre</th>
+          <th key={consulta.id}>Nombre</th>
           <th>Email</th>
           <th>Teléfono</th>
           <th>Asunto</th>

@@ -7,7 +7,7 @@ const Pros = () => {
       <img className={styles.arbol1} src="/assets/img/arbol1.svg" />
       <img className={styles.arbol2} src="/assets/img/arbol2.svg" />
 
-      <div className={styles.exclusividad}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -20,7 +20,7 @@ const Pros = () => {
 
         <p>Exclusividad</p>
       </div>
-      <div className={styles.perfecto}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -37,7 +37,7 @@ const Pros = () => {
         <p>Ajuste perfecto</p>
       </div>
 
-      <div className={styles.calidad}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -54,7 +54,7 @@ const Pros = () => {
         <p>Calidad artesanal</p>
       </div>
 
-      <div className={styles.materiales}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -70,7 +70,7 @@ const Pros = () => {
         <img src="/assets/logos/logo.svg" alt="Imagen central" />
       </div>
 
-      <div className={styles.materiales}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -82,7 +82,7 @@ const Pros = () => {
         <p>Creatividad</p>
       </div>
 
-      <div className={styles.materiales}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -94,7 +94,7 @@ const Pros = () => {
         <img src="/assets/img/integral.png" alt="Icono Materiales de Primera" />
         <p>Diseño Integral</p>
       </div>
-      <div className={styles.materiales}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
@@ -107,7 +107,7 @@ const Pros = () => {
         <p>Diseño Minimalista</p>
       </div>
 
-      <div className={styles.identidad}>
+      <div className={styles.proItem}>
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>

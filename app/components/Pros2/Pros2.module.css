@@ -19,6 +19,7 @@
 
 .pro {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 400px;
@@ -45,7 +46,7 @@
   list-style: none;
 
   background: white;
-  margin: 0 20px;
+
   border-radius: 50%;
   transition: 0.5s;
 
@@ -62,7 +63,6 @@
   bottom: 2px;
   width: 301px;
   background: #fff;
-  padding: 20px;
 
   box-sizing: border-box;
 
@@ -91,7 +91,8 @@
 }
 
 .proName {
-  width: 200px;
+  width: 400px;
+  font-size: 2em;
 }
 
 .imagen:hover {

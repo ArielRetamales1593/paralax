@@ -2,7 +2,7 @@
   background-image: url(../../../../public/assets/svg/montana4i.svg);
   background-repeat: no-repeat;
   background-size: (20%);
-  height: 42rem;
+  height: 50rem;
   padding: 1rem;
   margin-top: 5rem;
 }
@@ -13,41 +13,56 @@
   align-items: center;
   gap: 30px;
   margin: 5rem;
+  margin-top: 0;
 }
 .parrafo {
-  font-size: 18px;
-  margin-right: 2px;
-  color: black;
-  background-color: white;
-  padding: 2%;
-  width: 31%;
-  height: 30%;
-  transform: translateX(0%) translateY(-10px);
-}
+  font-size: 1rem;
+  padding: 5px;
 
-.parrafo::before {
-  content: "";
+  color: black;
+
+  width: 25%;
+  height: 40%;
+  left: 16%;
+
   position: absolute;
-  width: 50px;
-  height: 60px;
-  background-color: white;
-  top: 40%;
-  right: 0;
-  transform: rotate(130deg);
-  z-index: -4;
 }
 
 .titulo {
-  margin-left: 6rem;
-
-  font-size: 50px;
+  text-align: center;
+  font-size: 70px;
 }
-.titulo2 {
-  margin-left: 8rem;
+.titulo:hover {
+  color: #cad6ff;
+}
 
-  font-size: 20px;
+.titulo2 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #cad6ff;
+  text-transform: uppercase;
 }
 
 .foto {
+  margin-top: 6%;
   border: solid 2px white;
+}
+.contMsj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  font-size: 1.4em;
+  gap: 5px;
+  text-align: justify;
+}
+.parrafo1 {
+  color: black;
+  font-weight: 700;
+  width: 18rem;
+  height: 20rem;
+  position: absolute;
+  margin-right: 3%;
 }
