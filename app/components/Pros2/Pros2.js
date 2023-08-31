@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./Pros2.module.css";
 
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
+
 const Pros2 = () => {
   return (
     <div className={styles.container}>
@@ -8,7 +12,6 @@ const Pros2 = () => {
         <ul>
           <li className={styles.item}>
             <p className={styles.contenido}>
-              {" "}
               Piezas únicas y personalizadas para cada cliente.
             </p>
           </li>
@@ -17,6 +20,7 @@ const Pros2 = () => {
 
         <p className={styles.proName}>Exclusividad</p>
       </div>
+
       <div className={styles.pro}>
         <ul>
           <li className={styles.item}>

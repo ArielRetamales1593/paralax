@@ -7,16 +7,24 @@ function ProductosDetalle({ productos }) {
       <div className={styles.box}>
         <figure>
           <img className={styles.img} src={productos.url} alt="" />
-          <h1>{productos.nombre}</h1>
+
           {/* <h2>{productos.nombre}</h2>
             <p>{productos.descripcion}</p> */}
         </figure>
       </div>
 
-      <div>
-        <p>$ {productos.valor}</p>
-        <p>{productos.descripcion}</p>
-        <p>{productos.categoria}</p>
+      <div className={styles.datos}>
+        <div>
+          <h2 className={styles.titulo}>{productos.nombre}</h2>
+          <p className={styles.item}>${productos.valor}</p>
+        </div>
+        <div>
+          <p className={styles.item}> Material: {productos.material}</p>
+          <p className={styles.item}> Categoria: {productos.categoria}</p>
+          <p> {productos.descripcion}</p>
+        </div>
+
+        <button className={styles.boton}>Cotizar</button>
       </div>
     </div>
   );

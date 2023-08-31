@@ -1,14 +1,18 @@
 .titulo {
-  font-weight: 100;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 4.3rem;
 }
 .bar {
   counter-reset: step;
   margin-top: 75px;
   padding: 0;
   counter-increment: step 2;
+
+  font-weight: 700;
 }
 
 .bar li {
@@ -53,31 +57,39 @@
 }
 .contenido {
   position: absolute;
-  left: 2rem;
-  bottom: 30px;
-  width: 301px;
+  text-align: justify;
+  left: 12rem;
+  bottom: -18rem;
+  width: 16rem;
   background: #fff;
   padding: 20px;
   margin-bottom: 100px;
   box-sizing: border-box;
-
+  font-size: 1.4rem;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
   color: black;
-  font-size: 16px;
+
   transform: translateX(0%) translateY(-10px);
 }
 .contenido::before {
   content: "";
   position: absolute;
-  width: 29px;
-  height: 30px;
-  background-color: white;
-  bottom: 0px;
-  left: 9rem;
-  bottom: -10px;
-  transform: rotate(45deg);
+  /* width: 29px;
+  height: 30px; */
+
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid white;
+  border-bottom: 50px solid white;
+  left: 0rem;
+  bottom: 4rem;
+
+  z-index: -7;
+  transform: rotate(0deg);
 }
 
 .bar li:hover .contenido {

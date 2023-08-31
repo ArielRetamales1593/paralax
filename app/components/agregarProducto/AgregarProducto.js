@@ -64,7 +64,7 @@ const Agregar = ({ refresh }) => {
             <input type="number" id="valor" name="valor" />
             <br />
 
-            <label>Categoria:</label>
+            <label htmlFor="categoria">Categoria:</label>
             <select id="categoria" name="categoria" required>
               <option value="">Seleccione una opción</option>
               <option value="Economico">Economico</option>

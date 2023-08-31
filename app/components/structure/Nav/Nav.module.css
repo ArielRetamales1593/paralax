@@ -9,8 +9,13 @@
   font-weight: 700;
 }
 .item {
-  font-size: 1.7rem;
+  font-size: 1.7em;
 }
+
+.item:hover {
+  color: #cad6ff;
+}
+
 .nav2 {
   display: flex;
   justify-content: space-around;
@@ -26,7 +31,7 @@
   background-color: #e98e2d;
   box-shadow: 0px 1px 0px 0px #1c1b18;
 
-  border: 1px solid #333029;
+  border: 2px solid white;
   display: inline-block;
   cursor: pointer;
 
@@ -37,4 +42,8 @@
 }
 .cotiza:hover {
   background-color: #cad6ff;
+}
+
+.logo:hover {
+  filter: drop-shadow(2px 2px 1px #666);
 }

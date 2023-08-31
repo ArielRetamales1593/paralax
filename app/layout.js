@@ -2,10 +2,10 @@ import "./globals.css";
 
 import { PT_Sans } from "next/font/google";
 
-import Nav from "./components/structure/Nav/Nav";
-import Footer from "./components/structure/Footer/Footer";
-
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
+
+import localFont from "next/font/local";
+const myFont = localFont({ src: "/font/state.otf" });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <title>Dm Taller</title>
       </head>
 
-      <body className={ptSans.className}>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   );
 }

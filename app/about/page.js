@@ -5,7 +5,8 @@ import Slider from "../components/structure/Slider/Slider";
 import Contenido from "../components/structure/Contenido/Contenido";
 import Banner from "../components/Banner/Banner";
 import Plan from "../components/plan/Plan";
-import Pros from "../components/Pro/Pros";
+import GridFotos from "../components/gridFOTOS/GridFotos";
+
 import Pros2 from "../components/Pros2/Pros2";
 import TImeLine from "../components/TimeLine/TImeLine";
 
@@ -17,10 +18,9 @@ const page = () => {
       <Banner />
 
       <Contenido />
+      <GridFotos />
       <Plan />
       <Slider />
-
-      <Pros />
 
       <Pros2 />
 

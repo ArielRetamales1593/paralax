@@ -8,11 +8,45 @@ amarillo #FFCC00
 
 
 font size nav 2rem y font weight700
-font size titulos 
+font size titulos  4.3
+texto 1.5
+
+codigo marco blanco con punta 
+.info {
+  position: absolute;
+
+  background: #fff;
+
+  box-sizing: border-box;
+
+  transition: 0.5s;
+  color: black;
+  font-size: 16px;
+  transform: translateX(0%) translateY(-10px);
+  padding: 20px;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  /* width: 29px;
+    height: 30px; */
+
+/* width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-top: 40px solid transparent;
+    border-left: 40px solid white;
+    border-bottom: 40px solid white;
+    left: 0rem;
+    bottom: -20px;
+  
+    z-index: -7;
+    transform: rotate(90deg);
+  }
 
  */
 
-:root {
+*/ :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: "PT_Sans";

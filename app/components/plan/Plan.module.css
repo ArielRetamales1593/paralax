@@ -15,7 +15,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 19.2rem;
   background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Rack%20Lenga%20(3).jpg");
@@ -33,7 +33,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 19.2rem;
   background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Silla%20contraveta%20(27).JPG");
@@ -52,7 +52,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 19.2rem;
   background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Sillas%20Pilar%20(40).JPG");
@@ -60,9 +60,6 @@
   gap: 20px;
 
   color: #fff9f6;
-}
-.card:hover {
-  filter: brightness(100%);
 }
 
 .planes {
@@ -77,19 +74,52 @@
 .titulo {
   text-align: center;
 
-  font-size: 3em;
+  font-size: 4.6rem;
 }
 
 .titulo1 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .parrafo {
-  font-size: 20px;
   margin: 5%;
   opacity: 0;
   transition: 2s ease;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  position: absolute;
+  position: absolute;
+  width: 20%;
+  background: #fff;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+
+  transition: 0.5s;
+  color: black;
+  text-align: justify;
+  transform: translateX(0%) translateY(-10px);
+  padding: 20px;
 }
+
+/* .parrafo::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 30px;
+
+  width: 0;
+  height: 0;
+  border-right: 40px solid transparent;
+  border-top: 40px solid transparent;
+  border-left: 40px solid white;
+  border-bottom: 40px solid white;
+  left: 0rem;
+  top: -20px;
+
+  z-index: -7;
+  transform: rotate(0deg);
+} */
 
 .card:hover .parrafo {
   opacity: 1; /* Al hacer hover sobre la card, activamos el párrafo cambiando su opacidad a 1 */
@@ -105,17 +135,19 @@
   background-size: contain;
 }
 
-.boton {
+.boton1 {
   color: white;
   font-size: 1em;
+  font-weight: 700;
   background-color: #e98e2d;
-
-  border: 1px solid #333029;
+  border: solid 2px white;
   display: inline-block;
   cursor: pointer;
 
   padding: 12px 12px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
-  margin: 2px;
+}
+
+.boton1:hover {
+  background-color: #cad6ff;
 }

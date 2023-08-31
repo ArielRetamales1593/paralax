@@ -30,7 +30,7 @@
 
 .titulo {
   text-align: center;
-  font-size: 70px;
+  font-size: 4.3rem;
 }
 .titulo:hover {
   color: #cad6ff;
@@ -60,7 +60,8 @@
 }
 .parrafo1 {
   color: black;
-  font-weight: 700;
+  font-size: 1.5rem;
+
   width: 18rem;
   height: 20rem;
   position: absolute;

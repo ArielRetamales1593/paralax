@@ -1,5 +1,10 @@
 // import styles from "../../../page.module.css";
 import styles from "./Nav.module.css";
+import Link from "next/link";
+
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function Nav() {
   return (
@@ -13,20 +18,22 @@ export default function Nav() {
         />
       </div>
 
-      <ul className={styles.nav2}>
-        <a href="">
+      <ul className={`${styles.nav2} ${ptSans.className}`}>
+        <Link href={"/about"}>
           <li className={styles.item}>INICIO</li>
-        </a>
+        </Link>
 
-        <a href="../cotizacion">
+        <Link href={"/products"}>
           <li className={styles.item}>CATALOGO</li>
-        </a>
-        <a href="./assets/pages/contacto.html">
+        </Link>
+        <Link href={"/contact"}>
           <li className={styles.item}>NOSOTROS</li>
-        </a>
+        </Link>
       </ul>
       <a href="./index.js">
-        <button className={styles.cotiza}>COTIZA AQUÍ</button>
+        <button className={`${styles.cotiza} ${ptSans.className}`}>
+          COTIZA AQUÍ
+        </button>
       </a>
     </nav>
   );

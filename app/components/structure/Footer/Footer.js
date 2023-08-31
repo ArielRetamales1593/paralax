@@ -1,54 +1,39 @@
 "use client";
 // import styles from "../../../page.module.css";
 import styles from "./Footer.module.css";
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function Footer() {
   return (
     <div className={styles.contFooter}>
       <nav className={styles.footer}>
-        <div>
-          <div>
-            <img src="/assets/logos/logo.svg" width={250} alt="" />
-          </div>
+        <div className={styles.logo}>
+          <img src="/assets/logos/logo.svg" width={250} alt="" />
         </div>
-        <div>
-          <strong>REDES SOCIALES</strong>
 
-          <ul className={styles.redesSociales}>
-            <a>
-              <li>
-                <img src="/assets/logos/ig.svg" width={30} />
-              </li>
-            </a>
-            <a>
-              <li>
-                <img src="/assets/logos/fb.svg" width={30} />
-              </li>
-            </a>
-            <a>
-              <li>
-                {" "}
-                <img src="/assets/logos/wa.svg" width={30} />
-              </li>
-            </a>
-          </ul>
-        </div>
         <div>
-          <strong>DIRECCIÓN</strong>
-          <ul className={styles.redesSociales}>
-            <li>
-              <p className={styles.ubi}> Sierra Bella 1280, Santiago</p>
-            </li>
+          <ul className={`${styles.redesSociales} ${ptSans.className}`}>
+            <strong className={styles.item}>CONTACTO</strong>
+            <li>SIERRA BELLA </li>
+            <li>Diego@dmtaller.cl</li>
           </ul>
         </div>
 
         <div>
-          <strong>NOSOTROS</strong>
-          <ul className={styles.redesSociales}>
-            <li>
-              <button className={styles.boton}>Cotiza Aquí</button>
-            </li>
+          <ul className={`${styles.redesSociales} ${ptSans.className}`}>
+            <strong className={styles.item}>INFORMACIÓN</strong>
+            <li>CONTACTO</li>
+            <li>CONSULTAS</li>
+            <li>ENTREGAS</li>
           </ul>
+        </div>
+
+        <div>
+          <button className={`${styles.boton} ${ptSans.className}`}>
+            COTIZA AQUÍ
+          </button>
         </div>
       </nav>
     </div>
