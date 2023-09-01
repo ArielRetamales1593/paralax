@@ -4,6 +4,7 @@ import styles from "./Footer.module.css";
 import { PT_Sans } from "next/font/google";
 
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -24,9 +25,12 @@ export default function Footer() {
         <div>
           <ul className={`${styles.redesSociales} ${ptSans.className}`}>
             <strong className={styles.item}>INFORMACIÓN</strong>
-            <li>CONTACTO</li>
-            <li>CONSULTAS</li>
-            <li>ENTREGAS</li>
+
+            <Link href={"/contact"}>
+              <li>NOSOTROS</li>
+              <li>CONSULTAS</li>
+              <li>ENTREGAS</li>
+            </Link>
           </ul>
         </div>
 

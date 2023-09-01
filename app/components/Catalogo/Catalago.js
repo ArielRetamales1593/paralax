@@ -4,6 +4,9 @@ import Gallery from "../Gallery/Gallery";
 import styles from "./Catalogo.module.css";
 
 import LeerProductos from "@/app/function/leerProductos";
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 const Catalago = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -33,7 +36,9 @@ const Catalago = () => {
         <div className={styles.filtros}>
           <nav>
             <ul className={styles.lista}>
-              <h3 className={styles.categoria}>CATEGORIAS</h3>
+              <h3 className={`${styles.categoria} ${ptSans.className}`}>
+                CATEGORIAS
+              </h3>
 
               <li
                 className={styles.item}

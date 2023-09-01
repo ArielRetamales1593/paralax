@@ -30,3 +30,8 @@
   margin-right: 40%;
   margin-top: 2%;
 }
+
+.cardProductosAgregados {
+  display: flex;
+  gap: 20px;
+}

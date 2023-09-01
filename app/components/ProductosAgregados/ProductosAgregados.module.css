@@ -1,7 +1,18 @@
 .tabla {
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
   border: 1px solid #ddd;
-
   text-align: left;
+  border: solid 1px white;
+}
+
+.titulo1 {
+  text-align: center;
+  margin: 100x;
+  border: solid 2px white;
+}
+.desc {
+  max-width: 35rem;
+  overflow-y: auto;
+  margin: 200px;
 }

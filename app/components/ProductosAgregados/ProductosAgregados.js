@@ -13,7 +13,7 @@ function ProductosAgregados({ productos, setSelectedProductos, refresh }) {
   return (
     <div>
       <table className={styles.tabla}>
-        <tr>
+        <tr className={styles.titulo1}>
           <th>Nombre</th>
 
           <th>Descripción</th>
@@ -26,7 +26,7 @@ function ProductosAgregados({ productos, setSelectedProductos, refresh }) {
         <tr>
           <td key={productos.id}>{productos.nombre}</td>
 
-          <td>{productos.descripcion}</td>
+          <td className={styles.desc}>{productos.descripcion}</td>
           <td>{productos.categoria}</td>
           <td>{productos.material}</td>
           <td>{productos.valor}</td>
