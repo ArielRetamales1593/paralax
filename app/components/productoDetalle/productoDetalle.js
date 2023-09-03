@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./productoDetalle.module.css";
 import agregarCotizacion from "@/app/function/agregarCotizacion";
 import Link from "next/link";
+import FormDialog from "../Modal/Modal,";
 import { PT_Sans } from "next/font/google";
 
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
@@ -86,26 +87,7 @@ function ProductosDetalle({ productos }) {
         </div> */}
         <h3 className={styles.precio}> ${productos.valor}</h3>
 
-        <button type="submit" className={styles.boton}>
-          Cotizar
-        </button>
-
-        <Button onClick={handleOpen}>Open modal</Button>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
-          </Box>
-        </Modal>
+        <FormDialog productos={productos} />
       </div>
     </div>
   );
