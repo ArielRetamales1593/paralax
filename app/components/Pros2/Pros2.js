@@ -67,14 +67,6 @@ const Pros2 = () => {
         <p className={styles.proName}>Materiales </p>
       </div>
 
-      <div className={styles.imagen}>
-        <img
-          className={styles.imagen}
-          src="/assets/logos/logo.svg"
-          alt="Imagen central"
-        />
-      </div>
-
       <div className={styles.pro}>
         <ul>
           <li className={styles.item}>
@@ -124,6 +116,14 @@ const Pros2 = () => {
         </ul>
         <img src="/assets/img/huella.png" alt="Icono Expresión de Identidad" />
         <p className={styles.proName}>Identidad</p>
+      </div>
+
+      <div className={styles.imagen}>
+        <img
+          className={styles.imagen}
+          src="/assets/logos/logo.svg"
+          alt="Imagen central"
+        />
       </div>
     </div>
   );

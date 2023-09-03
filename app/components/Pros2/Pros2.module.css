@@ -1,10 +1,12 @@
 .container {
   display: flex;
-  padding: 140px;
-  gap: 200px;
-  overflow-x: scroll;
-  border: solid 2px white;
+  width: 100%;
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
   background-color: #e98e2d;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* .container::-webkit-scrollbar {
@@ -20,9 +22,8 @@
 .pro {
   display: flex;
   justify-content: center;
-
+  margin-top: 50px;
   align-items: center;
-  width: 400px;
 }
 
 /* .exclusividad,
@@ -44,7 +45,6 @@
 .item {
   position: relative;
   list-style: none;
-  background: white;
 
   margin-bottom: 20px;
 }
@@ -52,10 +52,10 @@
 .contenido {
   position: absolute;
   bottom: 2rem;
-  width: 20rem;
+  width: 16rem;
   background: #fff;
   left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   box-sizing: border-box;
 
   visibility: hidden;
@@ -90,14 +90,29 @@
   opacity: 1;
   /* transform: translateX(-50%) translateY(20px); */
 }
+.pro:hover .proName {
+  font-size: 1.4rem;
+  /* transform: translateX(-50%) translateY(20px); */
+}
 
 .proName {
-  width: 400px;
-  font-size: 2.5em;
+  width: 200px;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .imagen:hover {
   fill: #333;
+}
+
+.imagen {
+  width: 300px;
+}
+
+.imagen {
+  opacity: 2;
+}
+.imagen:hover {
+  filter: drop-shadow(2px 2px 2px black);
 }

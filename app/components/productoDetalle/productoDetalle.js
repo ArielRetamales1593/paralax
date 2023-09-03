@@ -42,28 +42,28 @@ function ProductosDetalle({ productos }) {
   return (
     <div className={styles.container}>
       <div className={styles.box}>
-        <figure>
-          <img className={styles.img} src={productos.url} alt="" />
-
-          {/* <h2>{productos.nombre}</h2>
-            <p>{productos.descripcion}</p> */}
-        </figure>
-      </div>
-
-      <div className={styles.datos}>
-        <div>
+        <div className={styles.contSlider}>
           <h2 className={`${styles.titulo} ${ptSans.className}`}>
             {productos.nombre}
           </h2>
-          <p className={styles.item}>${productos.valor}</p>
+          <section className={styles.slider}>
+            <img className={styles.foto} src={productos.url} alt="/" />
+            <img className={styles.foto} src={productos.url} alt="/" />
+            <img className={styles.foto} src={productos.url} alt="/" />
+            <img className={styles.foto} src={productos.url} alt="/" />
+            <img className={styles.foto} src={productos.url} alt="/" />
+          </section>
         </div>
-        <div>
-          <p className={styles.item}> MATERIAL: {productos.material}</p>
-          <p className={styles.item}> CATEGORIA: {productos.categoria}</p>
-          <p> {productos.descripcion}</p>
-        </div>
+      </div>
 
-        <div className={styles.contForm}>
+      <div className={styles.datos}>
+        <div className={styles.info1}>
+          <p className={styles.item}> MATERIAL: {productos.material}</p>
+          <p> ANCHO 250 cm LARGO 223 cm</p>
+        </div>
+        <p> {productos.descripcion}</p>
+
+        {/* <div className={styles.contForm}>
           <form className={styles.form} onSubmit={handleSubmit}>
             <label htmlFor="correo">Nombre:</label>
             <input type="text" id="usuario" name="usuario" required />
@@ -83,7 +83,29 @@ function ProductosDetalle({ productos }) {
               Cotizar
             </button>
           </form>
-        </div>
+        </div> */}
+        <h3 className={styles.precio}> ${productos.valor}</h3>
+
+        <button type="submit" className={styles.boton}>
+          Cotizar
+        </button>
+
+        <Button onClick={handleOpen}>Open modal</Button>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Text in a modal
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            </Typography>
+          </Box>
+        </Modal>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const Plan = () => {
       <h2 className={`${styles.titulo} ${ptSans.className}`}>CATEGORIAS</h2>
       <div className={styles.contenedor}>
         <div className={styles.card} alt="Mountains">
-          <h3 className={styles.titulo1}>PREMIUM</h3>
+          <h3 className={`${styles.titulo1} ${ptSans.className}`}>PREMIUM</h3>
           <p className={styles.parrafo}>
             Para trabajos en roble, coigüe, raulí, lenga u otras maderas
             nativas.
@@ -21,7 +21,7 @@ const Plan = () => {
         </div>
 
         <div className={styles.card2} alt="Mountains">
-          <h3 className={styles.titulo1}>STANDARD</h3>
+          <h3 className={`${styles.titulo1} ${ptSans.className}`}>STANDARD</h3>
           <p className={styles.parrafo}>
             Para trabajos en tableros de pino laminados
           </p>
@@ -31,7 +31,7 @@ const Plan = () => {
         </div>
 
         <div className={styles.card3} alt="Mountains">
-          <h3 className={styles.titulo1}>ECONÓMICO</h3>
+          <h3 className={`${styles.titulo1} ${ptSans.className}`}>ECONÓMICO</h3>
           <p className={styles.parrafo}>
             Para trabajos en tableros de terciado mueblería.
           </p>
