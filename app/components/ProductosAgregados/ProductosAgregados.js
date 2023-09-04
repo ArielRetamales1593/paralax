@@ -32,7 +32,7 @@ function ProductosAgregados({ productos, setSelectedProductos, refresh }) {
           <td>{productos.valor}</td>
           <td>{productos.tipo}</td>
 
-          <td>{productos.url}</td>
+          <td>{productos.url[0]}</td>
         </tr>
       </table>
 

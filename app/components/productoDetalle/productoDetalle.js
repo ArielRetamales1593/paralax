@@ -48,11 +48,15 @@ function ProductosDetalle({ productos }) {
             {productos.nombre}
           </h2>
           <section className={styles.slider}>
-            <img className={styles.foto} src={productos.url} alt="/" />
-            <img className={styles.foto} src={productos.url} alt="/" />
-            <img className={styles.foto} src={productos.url} alt="/" />
-            <img className={styles.foto} src={productos.url} alt="/" />
-            <img className={styles.foto} src={productos.url} alt="/" />
+            {Array.isArray(productos.url) &&
+              productos.url.map((url, index) => (
+                <img
+                  className={styles.foto}
+                  src={url}
+                  alt={`Imagen ${index + 1}`}
+                  key={index}
+                />
+              ))}
           </section>
         </div>
       </div>

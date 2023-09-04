@@ -10,6 +10,8 @@ import ProductosAgregados from "../components/ProductosAgregados/ProductosAgrega
 import LeerProductos from "../function/leerProductos";
 import editarProducto from "../function/editarProducto";
 import EditarModal from "../components/EditarModal/EditarModal";
+import LeerCotizacion from "../function/leerCotizacion";
+import ProductosCotizados from "../components/productosCotizados/ProductosCotizados";
 
 export default function Admin({}) {
   function refresh() {
@@ -21,6 +23,14 @@ export default function Admin({}) {
         alert(err);
       });
   }
+
+  LeerCotizacion()
+    .then((productos) => {
+      setAllCotizacion(productos);
+    })
+    .catch((err) => {
+      alert(err);
+    });
 
   useEffect(() => {
     Leer()
@@ -39,6 +49,7 @@ export default function Admin({}) {
   const [allProductos, setAllproductos] = useState(null);
   const [allConsulta, setConsulta] = useState(null);
   const [selectedProductos, setSelectedProductos] = useState(null);
+  const [allCotizacion, setAllCotizacion] = useState(null);
   return (
     <>
       {/* <Nav usuario={user.email} /> */}
@@ -69,6 +80,11 @@ export default function Admin({}) {
             setSelectedProductos={setSelectedProductos}
             refresh={refresh}
           />
+        ))}
+      <h2>Productos Cotizados </h2>
+      {allCotizacion &&
+        allCotizacion.map((productos) => (
+          <ProductosCotizados productos={productos} />
         ))}
     </>
   );

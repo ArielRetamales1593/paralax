@@ -36,39 +36,52 @@ function EditarModal({ productos, refresh }) {
         <br />
 
         <label htmlFor="material">Material:</label>
-        <input
-          type="text"
-          id="material"
-          name="material"
+
+        <select
           value={productoEditar?.material}
           onChange={(e) => {
             setProductoEditar({ ...productoEditar, material: e.target.value });
           }}
-        />
+          id="material"
+          name="material"
+          required
+        >
+          <option value="">Seleccione una opción</option>
+          <option value="Maderas Nativas">Maderas Nativas</option>
+          <option value="Tablero de pino alistonado">
+            Tablero de pino alistonado
+          </option>
+          <option value="Tableros de terciado mueblería">
+            Tableros de terciado mueblería
+          </option>
+          <option value="Pino seleccionado">Pino seleccionado</option>
+          <option value="Acero">Acero</option>
+          <option value="Bronce">Bronce</option>
+        </select>
+
         <br />
 
+        <br />
         <label htmlFor="tipo">Tipo:</label>
-        <input
+        <select
           value={productoEditar?.tipo}
           onChange={(e) => {
             setProductoEditar({ ...productoEditar, tipo: e.target.value });
           }}
-          type="text"
           id="tipo"
           name="tipo"
-        />
-        <br />
+          required
+        >
+          <option value="">Seleccione una opción</option>
+          <option value="Banca">Banca</option>
+          <option value="Artefactos">Artefactos</option>
+          <option value="Librero">Librero</option>
+          <option value="Micromueble">Micromueble</option>
+          <option value="Rack">Rack</option>
+          <option value="Recibidor">Recibidor</option>
+          <option value="Silla">Silla</option>
+        </select>
 
-        <label htmlFor="valor">Valor:</label>
-        <input
-          value={productoEditar?.valor}
-          onChange={(e) => {
-            setProductoEditar({ ...productoEditar, valor: e.target.value });
-          }}
-          type="number"
-          id="valor"
-          name="valor"
-        />
         <br />
 
         <label>Categoria:</label>
@@ -82,9 +95,9 @@ function EditarModal({ productos, refresh }) {
           required
         >
           <option value="">Seleccione una opción</option>
-          <option value="productos">Economico</option>
-          <option value="precios">Standar</option>
-          <option value="entrega">Premiun</option>
+          <option value="Económico">Económico</option>
+          <option value="Standar">Standar</option>
+          <option value="Premium">Premium</option>
         </select>
 
         <label htmlFor="descripcion">Descripción:</label>

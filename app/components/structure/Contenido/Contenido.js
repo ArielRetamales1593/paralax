@@ -31,7 +31,7 @@ function Contenido() {
         <div className={styles.contMsj}>
           <img
             className="marco"
-            width={420}
+            width={520}
             height={370}
             src="/assets/img/blanco222.png"
             alt=""
@@ -39,10 +39,15 @@ function Contenido() {
 
           <div className={`${styles.parrafo1} ${myFont.className}`}>
             <p>
-              ¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de
-              relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
-              el texto de relleno estándar de las industrias desde el año 1500,
-              cuando un impresor (N. del T. persona que se dedica a la imprenta)
+              DmTaller es un emprendimiento creativo que consiste en la
+              fabricación de proyectos de carpintería de autor, diseñados para
+              transformar y potenciar tu hogar de forma integral y a la medida,
+              escuchando tus necesidades, sueños y anhelos, interpretándolos en
+              una propuesta de diseño personalizado.
+              <br /> <br />
+              Ofrecemos un trabajo original, de diseño simple y práctico.
+              Nuestro trabajo lo ejercemos con el cariño y con el rigor de un
+              equipo de arquitectos dedicado al diseño y fabricación de muebles.
             </p>
           </div>
         </div>

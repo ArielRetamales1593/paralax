@@ -9,7 +9,7 @@ function Gallery({ productos }) {
         <div key={productos.valor} className={styles.box}>
           <Link href={`/products/${productos.id}`}>
             <figure className={styles.figura}>
-              <img className={styles.img} src={productos.url} alt="" />
+              <img className={styles.img} src={productos.url[0]} alt="" />
 
               {/* <h2>{productos.nombre}</h2>
             <p>{productos.descripcion}</p> */}

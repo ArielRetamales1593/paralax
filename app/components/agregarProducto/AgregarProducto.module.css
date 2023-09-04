@@ -17,13 +17,13 @@
   gap: 20px;
   padding: 7%;
   background-color: #101623;
-  border: solid white 3px;
+
   opacity: 1.2;
 }
 .form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 .check {
