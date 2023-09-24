@@ -10,8 +10,17 @@
 .parrafo1 {
   font-size: 1.5rem;
   text-align: justify;
+  padding: 5%;
+  color: black;
 }
 .titulo {
   text-align: center;
   font-size: 4.3rem;
+}
+.marco {
+  position: absolute;
+  left: 6%;
+  width: 670px;
+  height: 825px;
+  z-index: -3;
 }

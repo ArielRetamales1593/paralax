@@ -150,3 +150,23 @@
 .boton1:hover {
   background-color: #cad6ff;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+  }
+
+  .titulo {
+    text-align: center;
+
+    font-size: 2.3rem;
+  }
+
+  .titulo1 {
+    font-size: 1.5rem;
+  }
+}

@@ -4,18 +4,12 @@ import styles from "./Team.module.css";
 import { useState } from "react";
 
 const Team = () => {
-  const [hovered, setHovered] = useState(false);
-
-  const image1 =
-    "https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/diego1.JPG";
-  const image2 =
-    "https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Sillas%20Pilar%20(115).JPG";
-
   return (
     <div>
       {" "}
       <h1 className={styles.titulo}> Nosotros y Nosotras</h1>
       <div className={styles.aboutCont}>
+        <img className={styles.marco} src="/assets/img/blanco222.png" />
         <p className={styles.parrafo1}>
           Despúes de años de exploración y experimentación amateur, dmTaller se
           establece formalmente en mayo del 2021, en el peor momento de la
@@ -47,11 +41,8 @@ const Team = () => {
 
         <div>
           <img
-            src={hovered ? image2 : image1}
-            width={650}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            alt="Imagen"
+            src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/DSC_0417.JPG"
+            width={550}
           />
         </div>
       </div>

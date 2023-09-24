@@ -30,7 +30,7 @@ function Contenido() {
       <div className={styles.bienvenida}>
         <div className={styles.contMsj}>
           <img
-            className="marco"
+            className={styles.marco}
             width={520}
             height={370}
             src="/assets/img/blanco222.png"

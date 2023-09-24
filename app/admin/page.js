@@ -53,7 +53,7 @@ export default function Admin({}) {
   return (
     <>
       {/* <Nav usuario={user.email} /> */}
-      <h1>hola</h1>
+      <h1>hola Diego</h1>
 
       <p>Este es el sitio privado, para el admin</p>
       <button onClick={logOut} className="bt1">
@@ -69,8 +69,8 @@ export default function Admin({}) {
       <h2>Consulta Usuarios</h2>
       {allConsulta &&
         allConsulta.map((consulta) => <ConsultaUsuarios consulta={consulta} />)}
-      <h2> Agregar Productos</h2>
-      <Agregar refresh={refresh} />
+      {/* <h2> Agregar Productos</h2>
+      <Agregar refresh={refresh} /> */}
 
       <h2>Productos Agregados</h2>
       {allProductos &&

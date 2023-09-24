@@ -108,6 +108,7 @@
 
 .imagen {
   width: 300px;
+  margin-top: 2rem;
 }
 
 .imagen {
@@ -115,4 +116,45 @@
 }
 .imagen:hover {
   filter: drop-shadow(2px 2px 2px black);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e98e2d;
+
+    gap: 20px;
+  }
+  .imagen {
+    width: 200px;
+  }
+
+  .pro {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    width: 200px;
+  }
+
+  .contenido {
+    width: 14rem;
+    background: #fff;
+    left: 2rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    color: black;
+    text-align: justify;
+    transform: translateX(0%) translateY(-10px);
+    padding: 20px;
+  }
 }

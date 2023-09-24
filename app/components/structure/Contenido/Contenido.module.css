@@ -69,3 +69,74 @@
   position: absolute;
   margin-right: 3%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 5rem;
+    margin-top: 0;
+  }
+
+  .contMsj {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    font-size: 1.4em;
+    gap: 5px;
+    text-align: justify;
+  }
+
+  .parrafo1 {
+    color: black;
+    font-size: 1rem;
+    padding: 2rem;
+    width: 17rem;
+    height: 23rem;
+    position: static;
+    background-color: white;
+    margin-bottom: 6rem;
+    text-align: justify;
+  }
+
+  .marco {
+    margin-top: 8rem;
+    width: 350px;
+    height: 400px;
+    display: none;
+  }
+  .foto {
+    display: none;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .titulo:hover {
+    color: #cad6ff;
+  }
+
+  .titulo2 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #cad6ff;
+    text-transform: uppercase;
+  }
+
+  .contenido {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: (20%);
+    height: 100%;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+}

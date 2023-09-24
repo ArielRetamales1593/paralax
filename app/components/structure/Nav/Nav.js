@@ -1,6 +1,7 @@
 // import styles from "../../../page.module.css";
 import styles from "./Nav.module.css";
 import Link from "next/link";
+import "../../../../public/css/media.css"
 
 import { PT_Sans } from "next/font/google";
 

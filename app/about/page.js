@@ -20,7 +20,6 @@ const page = () => {
       <Contenido />
       <GridFotos />
       <Plan />
-      <Slider />
 
       <Pros2 />
 

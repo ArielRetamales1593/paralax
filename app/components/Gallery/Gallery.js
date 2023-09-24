@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Gallery.module.css";
 import Link from "next/link";
+import "../../../public/css/media.css"
 
 function Gallery({ productos }) {
   return (
