@@ -15,7 +15,7 @@ import TImeLine from "./components/TimeLine/TImeLine";
 const page = () => {
   return (
     <div>
-      <Nav />
+      {/* <Nav /> */}
 
       <Banner />
 
@@ -26,7 +26,7 @@ const page = () => {
       <Pros2 />
 
       <TImeLine />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -5,6 +5,8 @@ import { PT_Sans } from "next/font/google";
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 import localFont from "next/font/local";
+import Nav from "./components/structure/Nav/Nav";
+import Footer from "./components/structure/Footer/Footer";
 const myFont = localFont({ src: "/font/state.otf" });
 
 export const metadata = {
@@ -19,7 +21,13 @@ export default function RootLayout({ children }) {
         <title>Dm Taller</title>
       </head>
 
-      <body className={myFont.className}>{children}</body>
+      <body className={myFont.className}>
+        <Nav />
+
+        {children}
+
+        <Footer />
+      </body>
     </html>
   );
 }

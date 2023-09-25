@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Team = () => {
   return (
-    <div>
+    <div className={styles.contTeam}>
       {" "}
       <h1 className={styles.titulo}> Nosotros y Nosotras</h1>
       <div className={styles.aboutCont}>

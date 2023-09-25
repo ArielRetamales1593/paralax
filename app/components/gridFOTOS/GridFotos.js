@@ -50,20 +50,45 @@ const GridFotos = () => {
       </div>
       <div className={styles.boxImg}>
         <Link href={"/products/ug8imGU48b0Y1MbBkkcf"}>
-          <h2 className={styles.titulo2}>SUEÑOS DE NIÑOS</h2>
+          <h2 className={styles.titulo2}>MICROMUEBLES</h2>
           <p className={styles.info2}>
-            Cuna de colecho a medida, segura y ajustable, con uniones sin
-            tornillos ni clavos, barniz no tóxico y fácil apertura para el
-            adulto, garantizando la protección del bebé.
+            Muebles tamaño menores y especiales para ese lugar especial,
+            creaciones en serie, o colecciones de objetos de deseo.
           </p>
           <figure className={styles.figura}>
             <img
               className={styles.img}
-              src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/sue%C3%B1os%20de%20ni%C3%B1os/sue%C3%B1os%20de%20ni%C3%B1os%2005.jpg"
+              src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/micromuebles/3af54162-f1aa-419f-8d6b-f41eb2f58f95.jpg"
               alt=""
             />
           </figure>
         </Link>
+      </div>
+
+      <div className={styles.boxImg}>
+        <p className={styles.info3}>
+          Rack para TV de 50” fabricado íntegramente en tableros secos,
+          cepillados y pulidos de lenga de tierra del fuego (cerezo patagónico)
+        </p>
+        <figure className={styles.figura}>
+          <img
+            className={styles.img}
+            src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/rack%20patagonia/rack%20patagonia%2016.jpg"
+            alt=""
+          />
+        </figure>
+      </div>
+
+      <div className={styles.boxImg}>
+        <h2 className={styles.titulo3}>RACK PATAGONIA </h2>
+
+        <figure className={styles.figura}>
+          <img
+            className={styles.img}
+            src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/rack%20patagonia/rack%20patagonia%2010.jpg"
+            alt=""
+          />
+        </figure>
       </div>
     </div>
   );
