@@ -12,7 +12,18 @@ const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 const Catalago = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedType, setSelectedType] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showTipoOptions, setShowTipoOptions] = useState(false);
+  const [showCategoriaOptions, setShowCategoriaOptions] = useState(false);
+
+  const toggleTipoOptions = () => {
+    setShowTipoOptions(!showTipoOptions);
+  };
+
+  const toggleCategoriaOptions = () => {
+    setShowCategoriaOptions(!showCategoriaOptions);
+  };
 
   useEffect(() => {
     LeerProductos().then((productos) => {
@@ -39,37 +50,73 @@ const Catalago = () => {
       <div className={styles.contenedor}>
         <div className={styles.filtros}>
           <nav>
-            <ul className={styles.lista}>
-              <h3 className={`${styles.categoria} ${ptSans.className}`}>
-                CATEGORIAS
-              </h3>
-
-              <li
-                className={styles.item}
-                onClick={() => setSelectedCategory(null)}
-              >
-                Todos
-              </li>
-              <li
-                className={styles.item}
-                onClick={() => setSelectedCategory("Sillas")}
-              >
-                Sillas
-              </li>
-
-              <li
-                className={styles.item}
-                onClick={() => setSelectedCategory("Estantes")}
-              >
-                Estantes
-              </li>
-              <li
-                className={styles.item}
-                onClick={() => setSelectedCategory("Mesas")}
-              >
-                Mesas
-              </li>
-            </ul>
+            <h4 className={`${styles.categoria} ${ptSans.className}`}>
+              Filtrar
+            </h4>
+            <h4
+              className={`${styles.categoria} ${ptSans.className}`}
+              onClick={() => setSelectedCategory(null)}
+            >
+              TODO
+            </h4>{" "}
+            <h4
+              onClick={toggleTipoOptions}
+              className={`${styles.categoria} ${ptSans.className}`}
+            >
+              CATEGORIA
+            </h4>
+            {showTipoOptions && (
+              <ul className={styles.lista}>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Silla")}
+                >
+                  Sillas
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Artefactos")}
+                >
+                  Artefactos
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Librero")}
+                >
+                  Libreros
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Micromueble")}
+                >
+                  Micromuebles
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Rack")}
+                >
+                  Rack
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Recibidor")}
+                >
+                  Recibidor
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("banca")}
+                >
+                  Bancas
+                </li>
+                <li
+                  className={styles.item}
+                  onClick={() => setSelectedCategory("Escritorio")}
+                >
+                  Escritorio
+                </li>
+              </ul>
+            )}
           </nav>
         </div>
 

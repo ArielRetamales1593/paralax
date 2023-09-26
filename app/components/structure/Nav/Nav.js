@@ -29,8 +29,11 @@ export default function Nav() {
         <Link href={"/products"}>
           <li className={styles.item}>CATALOGO</li>
         </Link>
-        <Link href={"/contact"}>
+        <Link href={"/about"}>
           <li className={styles.item}>NOSOTROS</li>
+        </Link>
+        <Link href={"/contact"}>
+          <li className={styles.item}>CONTACTO</li>
         </Link>
       </ul>
       <a href="./index.js">

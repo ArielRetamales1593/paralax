@@ -1,17 +1,16 @@
 .aboutCont {
   display: flex;
   justify-content: center;
-
+  margin-top: 2rem;
   align-items: flex-start;
-  gap: 1rem;
-
-  margin: 3%;
+  gap: 5rem;
 }
 .parrafo1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: justify;
-  padding: 5%;
   color: black;
+  width: 400px;
+  margin-top: 2rem;
 }
 .titulo {
   text-align: center;
@@ -19,12 +18,18 @@
 }
 .marco {
   position: absolute;
-  left: 6%;
-  width: 670px;
+  left: 10%;
+  width: 480px;
   height: 825px;
   z-index: -3;
 }
 
 .contTeam {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  box-shadow: 10px 10px 10px black;
 }

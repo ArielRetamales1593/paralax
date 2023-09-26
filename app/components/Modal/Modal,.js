@@ -8,6 +8,9 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import styles from "./Modal.module.css";
 import agregarCotizacion from "@/app/function/agregarCotizacion";
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function FormDialog({ productos }) {
   const [nombreUsuario, setnombreUsuario] = React.useState("");
@@ -19,7 +22,7 @@ export default function FormDialog({ productos }) {
     e.preventDefault();
     const nombre = productos.nombre;
     const tipo = productos.tipo;
-    const material = productos.material;
+
     const valor = productos.valor;
     const categoria = productos.categoria;
 
@@ -28,7 +31,7 @@ export default function FormDialog({ productos }) {
     const data1 = {
       nombre,
       tipo,
-      material,
+
       valor,
       categoria,
 
@@ -81,19 +84,27 @@ export default function FormDialog({ productos }) {
 
   return (
     <div className={styles.contBoton}>
-      <Button className={styles.cotizar} onClick={handleClickOpen}>
-        Cotizar
+      <Button
+        className={`${styles.cotizar} ${ptSans.className}`}
+        onClick={handleClickOpen}
+      >
+        COTIZAR
       </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        className={`${styles.cont} ${ptSans.className}`}
+      >
         <DialogContent className={styles.modal}>
-          <DialogContentText className={styles.modal}>
+          <DialogContentText className={styles.modal1}>
             <h2>{productos.nombre}</h2>
             <p>{productos.material}</p>
           </DialogContentText>
 
-          <div className={styles.contForm}>
+          <div className={`${styles.contForm} ${ptSans.className}`}>
             <form className={styles.form}>
               <TextField
+                className={styles.textField1}
                 autoFocus
                 margin="dense"
                 id="nombreUsuario"
@@ -105,6 +116,7 @@ export default function FormDialog({ productos }) {
               />
 
               <TextField
+                className={styles.textField}
                 autoFocus
                 margin="dense"
                 id="emailUsuario"
@@ -115,6 +127,7 @@ export default function FormDialog({ productos }) {
                 onChange={(e) => setEmailUsuario(e.target.value)}
               />
               <TextField
+                className={styles.textField}
                 autoFocus
                 margin="dense"
                 id="tellUsuario"
@@ -126,6 +139,7 @@ export default function FormDialog({ productos }) {
               />
 
               <TextField
+                className={styles.textField}
                 autoFocus
                 margin="dense"
                 id="comentUsuario"
@@ -137,11 +151,11 @@ export default function FormDialog({ productos }) {
               />
 
               <button
-                className={styles.cotizar}
+                className={`${styles.cotizar} ${ptSans.className}`}
                 onClick={handleSubmit}
                 type="input"
               >
-                Confirmar
+                CONFIRMAR
               </button>
             </form>
           </div>

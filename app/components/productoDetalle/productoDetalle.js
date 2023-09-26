@@ -64,7 +64,6 @@ function ProductosDetalle({ productos }) {
       <div className={styles.datos}>
         <div className={styles.info1}>
           <p className={styles.item}> MATERIAL: {productos.material}</p>
-          <p> ANCHO 250 cm LARGO 223 cm</p>
         </div>
         <p> {productos.descripcion}</p>
 

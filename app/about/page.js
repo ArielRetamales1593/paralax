@@ -9,22 +9,12 @@ import GridFotos from "../components/gridFOTOS/GridFotos";
 
 import Pros2 from "../components/Pros2/Pros2";
 import TImeLine from "../components/TimeLine/TImeLine";
+import Team from "../components/about/Team";
 
 const page = () => {
   return (
     <div>
-      <Nav />
-
-      <Banner />
-
-      <Contenido />
-      <GridFotos />
-      <Plan />
-
-      <Pros2 />
-
-      <TImeLine />
-      <Footer />
+      <Team />
     </div>
   );
 };

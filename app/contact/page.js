@@ -5,7 +5,6 @@ import Team from "../components/about/Team";
 const page = () => {
   return (
     <div>
-      <Team />
       <Form />
     </div>
   );

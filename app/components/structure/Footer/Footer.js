@@ -17,8 +17,10 @@ export default function Footer() {
         <div>
           <ul className={`${styles.redesSociales} ${ptSans.className}`}>
             <strong className={styles.item}>CONTACTO</strong>
+            <Link href={"mailto:elcorreoquequieres@correo.com"}>
+              <li>Diego@dmtaller.cl</li>
+            </Link>
             <li>SIERRA BELLA </li>
-            <li>Diego@dmtaller.cl</li>
           </ul>
         </div>
 
@@ -28,9 +30,9 @@ export default function Footer() {
 
             <Link href={"/contact"}>
               <li>NOSOTROS</li>
-              <li>CONSULTAS</li>
-              <li>ENTREGAS</li>
             </Link>
+            <li>CONSULTAS</li>
+            <li>ENTREGAS</li>
           </ul>
         </div>
 

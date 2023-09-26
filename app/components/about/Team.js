@@ -41,6 +41,7 @@ const Team = () => {
 
         <div>
           <img
+            className={styles.img}
             src="https://storage.cloud.google.com/fotos-productos/SELECCI%C3%93N%20DMTALLER/DSC_0417.JPG"
             width={550}
           />

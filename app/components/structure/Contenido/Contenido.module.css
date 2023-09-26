@@ -140,3 +140,19 @@
     margin-top: 5rem;
   }
 }
+
+@keyframes show {
+  from {
+    scale: 90%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+.contenido {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+}

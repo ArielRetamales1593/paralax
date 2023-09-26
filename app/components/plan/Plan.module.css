@@ -75,6 +75,9 @@
   margin-bottom: 6rem;
   font-size: 4.6rem;
 }
+.titulo:hover {
+  color: #cad6ff;
+}
 
 .titulo1 {
   font-size: 3rem;
@@ -149,6 +152,22 @@
 
 .boton1:hover {
   background-color: #cad6ff;
+}
+
+@keyframes show {
+  from {
+    scale: 90%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+.planes {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

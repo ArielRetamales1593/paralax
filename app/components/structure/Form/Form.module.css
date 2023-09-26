@@ -6,7 +6,29 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-image: url(../../../../public/assets/img/desk1.png);
+  background-size: 100%;
+  margin-top: 2rem;
 }
+
+@keyframes show2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contForm {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show2;
+  animation-range: entry 80% cover 65%;
+  animation-fill-mode: both;
+}
+
 .contForm {
   width: 100%;
   height: 70%;
@@ -17,8 +39,10 @@
   gap: 20px;
   padding: 7%;
   background-color: #101623;
+  z-index: 0;
+  margin-top: 26rem;
   border: solid white 3px;
-  opacity: 1.2;
+  opacity: 0.9;
 }
 .form {
   display: flex;
