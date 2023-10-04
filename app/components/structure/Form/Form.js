@@ -28,6 +28,11 @@ const Form = () => {
   return (
     <>
       <div className={styles.fondoForm}>
+        <div className={styles.contMsj}>
+          <h1 className={styles.contactenos}> CONTÁCTENOS</h1>
+          <img className={styles.marco} src="/assets/img/blanco.png"></img>
+        </div>
+
         <div className={styles.contForm}>
           <div>
             <img src="/assets/logos/logo.svg" />

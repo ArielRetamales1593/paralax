@@ -1,7 +1,9 @@
 .fondoForm {
   height: 100vh;
+  position: relative;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -30,7 +32,6 @@
 }
 
 .contForm {
-  width: 100%;
   height: 70%;
   display: flex;
   justify-content: space-around;
@@ -39,7 +40,7 @@
   gap: 20px;
   padding: 7%;
   background-color: #101623;
-  z-index: 0;
+
   margin-top: 26rem;
   border: solid white 3px;
   opacity: 0.9;
@@ -53,4 +54,27 @@
 .check {
   margin-right: 40%;
   margin-top: 2%;
+}
+
+.contactenos {
+  font-size: 4rem;
+  position: absolute;
+  top: 4rem;
+  z-index: 3;
+  color: black;
+  margin-left: 1rem;
+}
+
+.marco {
+  position: absolute;
+  z-index: 0;
+  height: 150px;
+  width: 350px;
+  top: 2rem;
+}
+
+.contMsj {
+  position: absolute;
+  top: 0;
+  left: 15rem;
 }

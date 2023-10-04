@@ -3,6 +3,7 @@
   justify-content: center;
   align-self: center;
   gap: 40px;
+  position: relative;
 }
 
 .card {
@@ -11,7 +12,7 @@
   -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
 
   height: 28rem;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -29,7 +30,7 @@
   -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
 
   height: 28rem;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,7 +49,7 @@
   -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
 
   height: 28rem;
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -81,6 +82,8 @@
 
 .titulo1 {
   font-size: 3rem;
+  position: absolute;
+  top: 6rem;
 }
 
 .parrafo {
@@ -91,17 +94,17 @@
   color: black;
   padding: 1rem;
   position: absolute;
-  position: absolute;
-  width: 20%;
+  bottom: 0;
+  width: 15rem;
   background: #fff;
   font-size: 1.4rem;
   box-sizing: border-box;
 
   transition: 0.5s;
   color: black;
-  text-align: justify;
+  text-align: center;
   transform: translateX(0%) translateY(-10px);
-  padding: 20px;
+  padding: 10px;
 }
 
 .parrafo::before {
@@ -138,6 +141,7 @@
 }
 
 .boton1 {
+  margin-top: 2rem;
   color: white;
   font-size: 1em;
   font-weight: 700;
@@ -187,5 +191,9 @@
 
   .titulo1 {
     font-size: 1.5rem;
+  }
+
+  .card .card2 .card3 {
+    height: 20rem;
   }
 }

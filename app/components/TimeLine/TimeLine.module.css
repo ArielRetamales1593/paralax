@@ -157,13 +157,25 @@
     padding: 0;
     counter-increment: step 2;
     display: flex;
-    flex-direction: column;
+    gap: 100px;
+    overflow-x: scroll;
     justify-content: flex-start;
     align-items: flex-start;
     font-weight: 700;
+    width: 100%;
+    height: 25rem;
   }
 
   .bar li::after {
     display: none;
+  }
+
+  .scroll {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: none;
+    margin: 0;
+    width: 100%;
   }
 }

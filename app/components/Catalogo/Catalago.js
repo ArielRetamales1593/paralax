@@ -50,8 +50,8 @@ const Catalago = () => {
       <div className={styles.contenedor}>
         <div className={styles.filtros}>
           <nav>
-            <h4 className={`${styles.categoria} ${ptSans.className}`}>
-              Filtrar
+            <h4 className={`${styles.categoria1} ${ptSans.className}`}>
+              FILTRAR
             </h4>
             <h4
               className={`${styles.categoria} ${ptSans.className}`}

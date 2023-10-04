@@ -60,7 +60,14 @@
   font-weight: 700;
   font-size: 1.7rem;
 }
-
+.categoria1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #cad6ff;
+  width: 7rem;
+  padding: 9px;
+  text-align: center;
+}
 .orden {
   text-align: end;
   margin-top: 10%;

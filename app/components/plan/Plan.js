@@ -15,9 +15,9 @@ const Plan = () => {
             Para trabajos en roble, coigüe, raulí, lenga u otras maderas
             nativas.
           </p>
-          <button className={`${styles.boton1} ${ptSans.className}`}>
+          {/* <button className={`${styles.boton1} ${ptSans.className}`}>
             VER PRODUCTOS
-          </button>
+          </button> */}
         </div>
 
         <div className={styles.card2} alt="Mountains">
@@ -25,9 +25,9 @@ const Plan = () => {
           <p className={styles.parrafo}>
             Para trabajos en tableros de pino laminados
           </p>
-          <button className={`${styles.boton1} ${ptSans.className}`}>
+          {/* <button className={`${styles.boton1} ${ptSans.className}`}>
             VER PRODUCTOS
-          </button>
+          </button> */}
         </div>
 
         <div className={styles.card3} alt="Mountains">
@@ -35,11 +35,11 @@ const Plan = () => {
           <p className={styles.parrafo}>
             Para trabajos en tableros de terciado mueblería.
           </p>
-          <button className={`${styles.boton1} ${ptSans.className}`}>
-            VER PRODUCTOS{" "}
-          </button>
         </div>
       </div>
+      <button className={`${styles.boton1} ${ptSans.className}`}>
+        VER PRODUCTOS{" "}
+      </button>
     </div>
   );
 };
