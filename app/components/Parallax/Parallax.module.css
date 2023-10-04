@@ -13,21 +13,25 @@
 .mon1 {
   position: absolute;
   bottom: 7rem;
+  z-index: 0;
 }
 
 .mon2 {
   position: absolute;
   bottom: 2rem;
+  z-index: 1;
 }
 .mon3 {
   position: absolute;
   bottom: 1rem;
+  z-index: 2;
 }
 .mon4 {
   position: absolute;
   bottom: -10rem;
   width: 70%;
   left: 0;
+  z-index: 4;
 }
 .mon5 {
   position: absolute;
@@ -35,10 +39,26 @@
   width: 60%;
   right: -10px;
   overflow-y: hidden;
+  z-index: 4;
 }
 
 .logo {
-  width: 20rem;
+  width: 25rem;
   position: absolute;
-  top: 5rem;
+  top: 9rem;
+  z-index: 0;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.contLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.contLogo {
+  position: absolute;
+  top: 1rem; /* Establece una posición inicial por encima de la pantalla */
+  transition: 0.2 ease; /* Añade una transición suave */
 }

@@ -11,10 +11,12 @@ import GridFotos from "./components/gridFOTOS/GridFotos";
 
 import Pros2 from "./components/Pros2/Pros2";
 import TImeLine from "./components/TimeLine/TImeLine";
+import Parallax from "./components/Parallax/Parallax.1";
 
 const page = () => {
   return (
     <div>
+      <Parallax />
       <Banner />
 
       <Contenido />
