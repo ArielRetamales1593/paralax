@@ -47,7 +47,7 @@
   position: absolute;
   top: 9rem;
   z-index: 0;
-  filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(1px -20px 30px orange);
 }
 
 .contLogo {
@@ -61,4 +61,73 @@
   position: absolute;
   top: 1rem; /* Establece una posición inicial por encima de la pantalla */
   transition: 0.2 ease; /* Añade una transición suave */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .fondo {
+    margin-top: 3rem;
+    background-image: url(../../../public//assets/svg/fondo1.svg);
+    background-size: contain;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mon1 {
+    position: absolute;
+    bottom: 7rem;
+    z-index: 0;
+  }
+
+  .mon2 {
+    position: absolute;
+    bottom: 4rem;
+    z-index: 1;
+  }
+  .mon3 {
+    position: absolute;
+    bottom: 4rem;
+    z-index: 2;
+  }
+  .mon4 {
+    position: absolute;
+    bottom: -2rem;
+    width: 90%;
+    left: 0;
+    z-index: 4;
+  }
+  .mon5 {
+    position: absolute;
+    bottom: -2rem;
+    width: 90%;
+    right: -10px;
+    overflow-y: hidden;
+    z-index: 4;
+  }
+
+  .logo {
+    width: 15rem;
+    position: absolute;
+    top: 2rem;
+    z-index: 0;
+    filter: drop-shadow(1px -20px 30px orange);
+  }
+
+  .contLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .contLogo {
+    position: absolute;
+    top: 1rem; /* Establece una posición inicial por encima de la pantalla */
+    transition: 0.2 ease; /* Añade una transición suave */
+  }
 }

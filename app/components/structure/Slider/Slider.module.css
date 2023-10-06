@@ -27,3 +27,22 @@
   opacity: 1;
   filter: contrast(120%);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .slider {
+    display: flex;
+    width: 70rem;
+    height: 20rem;
+    margin-top: 5%;
+    border: solid white 2px;
+    margin-bottom: 5rem;
+  }
+
+  .contSlider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+}

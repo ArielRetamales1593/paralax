@@ -23,6 +23,9 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 /* .container::-webkit-scrollbar {
   background-color: #e98e2d;

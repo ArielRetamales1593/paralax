@@ -172,6 +172,9 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -195,5 +198,82 @@
 
   .card .card2 .card3 {
     height: 20rem;
+  }
+
+  .card {
+    box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+
+    height: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15rem;
+    background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Rack%20Lenga%20(3).jpg");
+    background-size: cover;
+    gap: 20px;
+
+    color: #fff9f6;
+  }
+  .card2 {
+    box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+
+    height: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15rem;
+    background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Silla%20contraveta%20(27).JPG");
+    background-size: cover;
+    gap: 20px;
+
+    color: #fff9f6;
+  }
+
+  .card3 {
+    box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+
+    height: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15rem;
+    background-image: url("https://storage.cloud.google.com/fotosdmt/mockup_pag%20web_dmtaller/Sillas%20Pilar%20(40).JPG");
+    background-size: cover;
+    gap: 20px;
+
+    color: #fff9f6;
+  }
+
+  .parrafo {
+    margin: 5%;
+    opacity: 0;
+    transition: 2s ease;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 12rem;
+    background: #fff;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+
+    transition: 0.5s;
+    color: black;
+    text-align: justify;
+    transform: translateX(0%) translateY(-10px);
+    padding: 10px;
   }
 }

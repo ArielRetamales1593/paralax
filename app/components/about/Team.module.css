@@ -33,3 +33,27 @@
 .img {
   box-shadow: 10px 10px 10px black;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .aboutCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+
+  .marco {
+    display: none;
+  }
+
+  .parrafo1 {
+    padding: 1rem;
+    background-color: white;
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+}

@@ -54,3 +54,17 @@
 .logo:hover {
   filter: drop-shadow(5px 5px 5px black);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .fondo {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    margin-top: 5%;
+    border: solid white 2px;
+    margin-bottom: 2rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+}

@@ -261,4 +261,22 @@
     grid-column-start: span 2;
     grid-row-start: span 2;
   }
+
+  @keyframes show2 {
+    from {
+      scale: 80%;
+    }
+    to {
+      scale: 100%;
+    }
+  }
+
+  .containerImg {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show2;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }
 }

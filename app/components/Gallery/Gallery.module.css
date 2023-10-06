@@ -1,5 +1,8 @@
 .container {
   padding: 5px;
+
+  transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s,
+    opacity 0.5s linear 0.3s;
 }
 
 .container:nth-child(2) {
@@ -25,6 +28,24 @@
   border: solid 2px;
 }
 
+.box {
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s linear, height 0.1s linear 0s;
+  opacity: 0.6;
+  transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s,
+    opacity 2s linear 1s;
+}
+
+/* .box:hover .img:not(:hover) {
+  filter: blur(6px);
+  opacity: 0.2;
+} */
+.box:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s linear 0.3s;
+  opacity: 1;
+}
+
 /* @media screen and (max-width: 800px) {
   .container {
     width: 95%;
@@ -39,7 +60,7 @@
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 95%;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
 

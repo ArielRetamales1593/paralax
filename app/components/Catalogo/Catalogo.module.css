@@ -95,12 +95,26 @@
   .categoria {
     font-weight: 700;
     font-size: 15px;
+    text-align: center;
   }
 
+  .categoria1 {
+    display: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: #cad6ff;
+    width: 7rem;
+    padding: 9px;
+    text-align: center;
+  }
   .contenedor {
     display: flex;
-    align-items: normal;
-    margin-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: 0;
     margin-top: 0;
   }
 
@@ -114,6 +128,13 @@
     /* Espacio entre las columnas */
     margin: 5%;
     row-gap: 10px;
+  }
+
+  .filtros {
+    width: 200px;
+    list-style: none;
+    margin-top: 4.2rem;
+    text-align: center;
   }
 }
 

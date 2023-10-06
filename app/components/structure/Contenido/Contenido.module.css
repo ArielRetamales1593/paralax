@@ -70,6 +70,24 @@
   margin-right: 3%;
 }
 
+@keyframes show2 {
+  from {
+    scale: 80%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+.contenido {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show2;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .bienvenida {
     display: flex;
@@ -111,9 +129,6 @@
     height: 400px;
     display: none;
   }
-  .foto {
-    display: none;
-  }
 
   .titulo {
     text-align: center;
@@ -139,20 +154,32 @@
     padding: 1rem;
     margin-top: 5rem;
   }
-}
 
-@keyframes show {
-  from {
-    scale: 90%;
+  .foto {
+    box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    width: 21rem;
   }
-  to {
-    scale: 100%;
-  }
-}
 
-.contenido {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
+  .foto {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes show {
+    from {
+      scale: 25%;
+      opacity: 0;
+    }
+    to {
+      scale: 100%;
+      opacity: 1;
+    }
+  }
 }

@@ -49,7 +49,7 @@ const Catalago = () => {
 
       <div className={styles.contenedor}>
         <div className={styles.filtros}>
-          <nav>
+          <nav className={styles.contNav}>
             <h4 className={`${styles.categoria1} ${ptSans.className}`}>
               FILTRAR
             </h4>
