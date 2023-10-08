@@ -124,9 +124,6 @@
   }
 
   .marco {
-    margin-top: 8rem;
-    width: 350px;
-    height: 400px;
     display: none;
   }
 
@@ -147,29 +144,17 @@
   }
 
   .contenido {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: (20%);
-    height: 100%;
-    padding: 1rem;
-    margin-top: 5rem;
+    padding: 0rem;
+    margin-top: 0rem;
+    height: 33rem;
   }
 
   .foto {
-    box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 13px 10px 25px 0px rgba(0, 0, 0, 0.75);
-    width: 21rem;
+    display: none;
   }
 
-  .foto {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 25% cover 30%;
-    animation-fill-mode: both;
+  .parrafo1 {
+    font-size: 1rem;
   }
 
   @keyframes show {
@@ -181,5 +166,17 @@
       scale: 100%;
       opacity: 1;
     }
+  }
+
+  .contMsj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 29rem;
+    font-size: 1.4em;
+    gap: 5px;
+    text-align: justify;
+    margin-bottom: 0;
   }
 }

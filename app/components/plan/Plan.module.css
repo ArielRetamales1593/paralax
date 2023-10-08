@@ -68,7 +68,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 5%;
-  margin-bottom: 8%;
+  margin-bottom: 4rem;
 }
 
 .titulo {
@@ -275,5 +275,14 @@
     text-align: justify;
     transform: translateX(0%) translateY(-10px);
     padding: 10px;
+  }
+
+  .planes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 8rem;
   }
 }

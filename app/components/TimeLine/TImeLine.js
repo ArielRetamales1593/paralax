@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./TimeLine.module.css";
 
+import { PT_Sans } from "next/font/google";
+
+const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
+
 const TImeLine = () => {
   return (
     <div className={styles.scroll}>
-      <h1 className={styles.titulo}>NUESTRO PROCESO</h1>
+      <h2 className={`${styles.titulo} ${ptSans.className}`}>
+        NUESTRO PROCESO
+      </h2>
       <ul className={styles.bar}>
         <li>
           1
