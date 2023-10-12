@@ -47,6 +47,7 @@ function ProductosDetalle({ productos }) {
           <h2 className={`${styles.titulo} ${ptSans.className}`}>
             {productos.nombre}
           </h2>
+
           <section className={styles.slider}>
             {Array.isArray(productos.url) &&
               productos.url.map((url, index) => (
@@ -63,7 +64,9 @@ function ProductosDetalle({ productos }) {
 
       <div className={styles.datos}>
         <div className={styles.info1}>
-          <p className={styles.item}> MATERIAL: {productos.material}</p>
+          <p className={styles.item}> Material:{productos.material}</p>
+          <p className={styles.item}> Tipo: {productos.tipo}</p>
+          <p className={styles.item}> Categoria: {productos.categoria}</p>
         </div>
         <p> {productos.descripcion}</p>
 
@@ -88,7 +91,10 @@ function ProductosDetalle({ productos }) {
             </button>
           </form>
         </div> */}
-        <h3 className={styles.precio}> ${productos.valor}</h3>
+
+        <div className={styles.datos2}>
+          <h3 className={styles.precio}> ${productos.valor}</h3>
+        </div>
 
         <FormDialog productos={productos} />
       </div>

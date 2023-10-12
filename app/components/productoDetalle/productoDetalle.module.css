@@ -4,29 +4,70 @@
   display: flex;
 
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
 }
 
 .datos {
-  margin-top: 4rem;
+  position: relative;
+  top: 4rem;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   text-align: justify;
   font-size: 1.3rem;
   width: 500px;
 }
+
+.datos2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 2rem;
+}
 .info1 {
   color: #cad6ff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.2rem;
+  background-color: white;
   flex-direction: column;
+  text-align: center;
   text-transform: uppercase;
+  color: #1c1b18;
+  padding: 10px;
+  width: 300px;
+
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
+.box {
+  position: relative;
+}
+/* .info1::before {
+  content: "";
+  position: absolute;
+
+  width: 0;
+  height: 0;
+  border-right: 56px solid transparent;
+  border-top: 40px solid transparent;
+  border-left: 40px solid white;
+  border-bottom: 40px solid white;
+  left: 0rem;
+  bottom: 40px;
+
+  z-index: -7;
+  transform: rotate(0deg);
+} */
+
+.item {
+  align-self: center;
+}
 .boton {
   color: white;
   font-size: 1.3rem;
@@ -65,6 +106,10 @@
   margin-left: rem;
 }
 
+.contProducts {
+  display: flex;
+  justify-content: center;
+}
 .contSlider {
   display: flex;
   flex-direction: column;
@@ -74,7 +119,7 @@
 .slider {
   display: flex;
   width: 40rem;
-  height: 25rem;
+  height: 30rem;
 
   border: solid white 2px;
   margin-bottom: 5rem;
@@ -97,4 +142,83 @@
 
 .precio {
   text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .slider {
+    display: flex;
+    width: 20rem;
+    border: solid white 2px;
+    margin-bottom: 1rem;
+  }
+
+  .contSlider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .datos {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    width: 22rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: center;
+  }
+
+  .foto {
+    cursor: crosshair;
+
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+  /* .info1 {
+    color: #cad6ff;
+    display: flex;
+    font-size: 1rem;
+    background-color: white;
+    flex-direction: column;S
+    text-align: center;
+    text-transform: uppercase;
+    color: #1c1b18;
+    padding: 10px;
+    position: absolute;
+    top: 58rem;
+  } */
+
+  .container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }

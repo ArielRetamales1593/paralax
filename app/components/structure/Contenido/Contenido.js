@@ -22,7 +22,7 @@ function Contenido() {
     <div className={styles.contenido}>
       <h1 className={`${styles.titulo} ${ptSans.className}`}>
         {" "}
-        ¡Bienvenido a dmTaller!
+        ¡BIENVENIDO A dmTaller!
       </h1>
       <h2 className={`${styles.titulo2} ${myFont.className}`}>
         Carpintería de Autor en Muebles a Medida{" "}
@@ -37,7 +37,7 @@ function Contenido() {
             alt=""
           />
 
-          <div className={`${styles.parrafo1} ${myFont.className}`}>
+          <div className={styles.parrafo1}>
             <p>
               DmTaller es un emprendimiento creativo que consiste en la
               fabricación de proyectos de carpintería de autor, diseñados para

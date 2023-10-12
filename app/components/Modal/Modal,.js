@@ -84,12 +84,13 @@ export default function FormDialog({ productos }) {
 
   return (
     <div className={styles.contBoton}>
-      <Button
+      <button
         className={`${styles.cotizar} ${ptSans.className}`}
         onClick={handleClickOpen}
       >
         COTIZAR
-      </Button>
+      </button>
+
       <Dialog
         open={open}
         onClose={handleClose}

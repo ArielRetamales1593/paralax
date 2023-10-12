@@ -27,7 +27,7 @@
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show2;
-  animation-range: entry 80% cover 65%;
+  animation-range: entry 80% cover 55%;
   animation-fill-mode: both;
 }
 
@@ -41,14 +41,14 @@
   padding: 7%;
   background-color: #101623;
 
-  margin-top: 26rem;
+  margin-top: 28rem;
   border: solid white 3px;
   opacity: 0.9;
 }
 .form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
 }
 
 .check {
@@ -57,19 +57,20 @@
 }
 
 .contactenos {
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   z-index: 3;
   color: black;
   margin-left: 1rem;
+  position: absolute;
 }
 
 .marco {
-  position: absolute;
+  position: relative;
   z-index: 0;
-  height: 150px;
-  width: 350px;
+  height: 6rem;
+  width: 17rem;
   top: 2rem;
 }
 
@@ -77,4 +78,53 @@
   position: absolute;
   top: 0;
   left: 15rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contactenos {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    z-index: 3;
+    color: black;
+    left: 0;
+    position: absolute;
+  }
+
+  .marco {
+    left: 0;
+    position: relative;
+    z-index: 0;
+    height: 4rem;
+    width: 10rem;
+    top: 2rem;
+  }
+
+  .contMsj {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+  }
+
+  .contForm {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    gap: 20px;
+    padding: 7%;
+    background-color: #101623;
+    border: none;
+    margin-top: 28rem;
+    margin-bottom: 20rem;
+
+    opacity: 0.9;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
 }

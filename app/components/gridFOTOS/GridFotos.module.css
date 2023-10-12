@@ -106,9 +106,15 @@
 }
 
 .titulo0 {
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 6rem;
-  font-size: 4.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 4.3rem;
+}
+.titulo0:hover {
+  color: #cad6ff;
 }
 
 .titulo {
@@ -151,6 +157,12 @@
   width: 300px;
 
   bottom: 2%;
+}
+.info {
+  position: absolute;
+  width: 300px;
+  left: 30%;
+  margin-top: 2rem;
 }
 .info {
   position: absolute;
@@ -261,11 +273,11 @@
   .titulo0 {
     text-align: center;
 
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .titulo {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-top: 50%;
   }
   .titulo2 {

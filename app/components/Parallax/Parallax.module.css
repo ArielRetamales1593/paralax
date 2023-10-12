@@ -47,7 +47,7 @@
   position: absolute;
   top: 9rem;
   z-index: 0;
-  filter: drop-shadow(1px -20px 30px orange);
+  filter: drop-shadow(1px -20px 55px orange);
 }
 
 .contLogo {

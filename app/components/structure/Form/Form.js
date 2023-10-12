@@ -34,7 +34,7 @@ const Form = () => {
         </div>
 
         <div className={styles.contForm}>
-          <div>
+          <div className={styles.logo}>
             <img src="/assets/logos/logo.svg" />
           </div>
           <form onSubmit={handleSubmit} className={styles.form}>

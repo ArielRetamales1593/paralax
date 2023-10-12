@@ -73,8 +73,14 @@
 
 .titulo {
   text-align: center;
-  margin-bottom: 6rem;
-  font-size: 4.6rem;
+  margin-bottom: 4rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  font-size: 4.3rem;
 }
 .titulo:hover {
   color: #cad6ff;
@@ -167,7 +173,7 @@
   }
 }
 
-.planes {
+.contenedor {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
@@ -188,8 +194,8 @@
 
   .titulo {
     text-align: center;
-
-    font-size: 2.3rem;
+    margin-bottom: 0;
+    font-size: 2rem;
   }
 
   .titulo1 {

@@ -98,6 +98,11 @@
     text-align: center;
   }
 
+  .categoria {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
   .categoria1 {
     display: none;
     font-weight: 700;
@@ -119,7 +124,7 @@
   }
 
   .item {
-    font-size: 12px;
+    font-size: 1.3rem;
   }
 
   .cont {
