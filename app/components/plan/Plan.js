@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Plan.module.css";
 import { PT_Sans } from "next/font/google";
+import Link from "next/link";
 
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -37,9 +38,12 @@ const Plan = () => {
           </p>
         </div>
       </div>
-      <button className={`${styles.boton1} ${ptSans.className}`}>
-        VER PRODUCTOS{" "}
-      </button>
+
+      <Link href={"/products"}>
+        <button className={`${styles.boton1} ${ptSans.className}`}>
+          VER PRODUCTOS{" "}
+        </button>
+      </Link>
     </div>
   );
 };

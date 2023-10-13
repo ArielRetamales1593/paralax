@@ -8,6 +8,11 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import styles from "./Modal.module.css";
 import agregarCotizacion from "@/app/function/agregarCotizacion";
+import createContacto from "@/app/function/createContacto";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 import { PT_Sans } from "next/font/google";
 
 const ptSans = PT_Sans({ weight: ["400", "700"], subsets: ["latin"] });
@@ -40,6 +45,15 @@ export default function FormDialog({ productos }) {
       telUsuario,
       comentUsuario,
     };
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Nos comunicaremos contigo dentro de las proximas 48 hrs",
+      showConfirmButton: false,
+      timer: 2500,
+    });
+
     await agregarCotizacion(data1);
     setnombreUsuario(""); // Limpiar el estado después de enviar
     setEmailUsuario("");
@@ -87,6 +101,7 @@ export default function FormDialog({ productos }) {
       <button
         className={`${styles.cotizar} ${ptSans.className}`}
         onClick={handleClickOpen}
+        type="input"
       >
         COTIZAR
       </button>
@@ -96,38 +111,88 @@ export default function FormDialog({ productos }) {
         onClose={handleClose}
         className={`${styles.cont} ${ptSans.className}`}
       >
-        <DialogContent className={styles.modal}>
-          <DialogContentText className={styles.modal1}>
-            <h2>{productos.nombre}</h2>
-            <p>{productos.material}</p>
+        <DialogContent className={`${styles.modal1} ${ptSans.className}`}>
+          <DialogContentText className={`${styles.titulo} ${ptSans.className}`}>
+            <h2 className={`${styles.infoPro} ${ptSans.className}`}>
+              {productos.nombre}
+            </h2>
+            <p className={`${styles.infoPro} ${ptSans.className}`}>
+              {productos.tipo}
+            </p>
+            <p className={`${styles.infoPro} ${ptSans.className}`}>
+              ${productos.valor}
+            </p>
           </DialogContentText>
 
           <div className={`${styles.contForm} ${ptSans.className}`}>
             <form className={styles.form}>
-              <TextField
-                className={styles.textField1}
-                autoFocus
+              <label className={`${styles.textField} ${ptSans.className}`}>
+                {" "}
+                Nombre
+              </label>
+              <input
+                className=""
+                type="text"
+                id="nombreUsuario"
+                onChange={(e) => setnombreUsuario(e.target.value)}
+              ></input>
+
+              <label className={`${styles.textField} ${ptSans.className}`}>
+                {" "}
+                Correo Electronico
+              </label>
+              <input
+                className=""
+                type="email"
+                id="emailUsuario"
+                onChange={(e) => setEmailUsuario(e.target.value)}
+              ></input>
+
+              <label className={`${styles.textField} ${ptSans.className}`}>
+                {" "}
+                Teléfono
+              </label>
+              <input
+                className=""
+                type="tel"
+                id="teUsuario                           "
+                onChange={(e) => setTelUsuario(e.target.value)}
+              ></input>
+
+              <label className={`${styles.textField} ${ptSans.className}`}>
+                {" "}
+                Comentario
+              </label>
+              <textarea
+                className=""
+                type="text"
+                id="teUsuario                           "
+                onChange={(e) => setComentUsuario(e.target.value)}
+              ></textarea>
+
+              {/* <TextField
+                className={`${styles.textField} ${ptSans.className}`}
                 margin="dense"
                 id="nombreUsuario"
                 label="Nombre"
                 type="text"
                 fullWidth
-                variant="standard"
+                variant="outlined"
                 onChange={(e) => setnombreUsuario(e.target.value)}
-              />
-
+              /> */}
+              {/* 
               <TextField
                 className={styles.textField}
                 autoFocus
                 margin="dense"
                 id="emailUsuario"
-                label="Email"
+                label="Correo Electronico"
                 type="email"
                 fullWidth
                 variant="standard"
                 onChange={(e) => setEmailUsuario(e.target.value)}
-              />
-              <TextField
+              /> */}
+              {/* <TextField
                 className={styles.textField}
                 autoFocus
                 margin="dense"
@@ -137,9 +202,9 @@ export default function FormDialog({ productos }) {
                 fullWidth
                 variant="standard"
                 onChange={(e) => setTelUsuario(e.target.value)}
-              />
+              /> */}
 
-              <TextField
+              {/* <TextField
                 className={styles.textField}
                 autoFocus
                 margin="dense"
@@ -149,10 +214,10 @@ export default function FormDialog({ productos }) {
                 fullWidth
                 variant="standard"
                 onChange={(e) => setComentUsuario(e.target.value)}
-              />
+              /> */}
 
               <button
-                className={`${styles.cotizar} ${ptSans.className}`}
+                className={`${styles.confirmar} ${ptSans.className}`}
                 onClick={handleSubmit}
                 type="input"
               >

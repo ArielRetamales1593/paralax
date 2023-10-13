@@ -1,37 +1,79 @@
 .cotizar {
-  color: white !important;
-  font-size: 1.2em !important;
-  background-color: #e98e2d !important;
-  font-family: none;
-  width: 200px !important;
+  color: white;
+  font-size: 1em;
+  background-color: #e98e2d;
+
+  width: 200px;
   text-align: center;
-  display: inline-block !important;
-  border: none !important;
-  padding: 10px;
-  text-decoration: none !important;
-  border-radius: 0 !important;
-  align-self: center !important;
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+
+  align-self: center;
   cursor: pointer;
-  font-weight: 400 !important;
+  font-weight: 400;
   box-shadow: 2px 2px 2px 2px #1c1b18;
+  margin-top: 0rem;
 
   border: none;
-  display: inline-block;
+
   cursor: pointer;
 
-  text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
 
 .cotizar:hover {
   background-color: #cad6ff !important;
 }
+.confirmar {
+  color: white;
+  font-size: 1em;
+  background-color: #e98e2d;
 
+  width: 200px;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+
+  align-self: center;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 2px 2px 2px 2px #1c1b18;
+  margin-top: 2rem;
+
+  border: none;
+
+  cursor: pointer;
+
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.confirmar:hover {
+  background-color: #cad6ff !important;
+}
+
+.textField {
+  padding: 0 !important;
+}
+.textField:hover {
+  color: black !important;
+}
 .contBoton {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+.infoPro {
+  color: black;
+  text-transform: uppercase;
 }
 
 .form {
@@ -39,11 +81,35 @@
   display: flex;
   flex-direction: column;
   border-radius: 0 !important;
+  color: black !important;
+}
+.form input {
+  background-color: #cad6ff;
+  color: black;
+  padding: 5px;
+  border: none;
+}
+.form label {
+  color: black;
+  font-size: 1.3rem;
+}
+.form textarea {
+  background-color: #cad6ff;
+  color: black;
+  border: none;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .cotizar {
     font-size: 1rem !important;
     width: 100px !important;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 !important;
+    color: black !important;
   }
 }
